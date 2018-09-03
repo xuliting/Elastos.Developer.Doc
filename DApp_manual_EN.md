@@ -34,11 +34,8 @@
 ## 3.Definition of DApp
 
 There are two components in DApp: The DApp owenership and DApp document.
-
 The ownership of DApp is in the Blockchain like the bitcoin in the personal wallet. The DApp cannot run if there is no ownership in the wallet. But of course the DApp can configure as free app. 
-
-You can resell the DApp similar to  bitcoin if you play enough for the DApp games. Of course this you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
-
+You can resell the DApp similar to  bitcoin. Of course you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
 There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
 
 
