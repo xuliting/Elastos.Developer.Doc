@@ -29,7 +29,7 @@
 
 * The DApp can be freely packaged and created by users
 
-* Protect the digital assets. The assets owensership will not be disclosed abd destroyed
+* Protect the digital assets. The assets owensership will not be disclosed and destroyed
 
 ### 2.3.Trinity Architecture
 
