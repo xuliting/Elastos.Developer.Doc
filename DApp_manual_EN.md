@@ -31,8 +31,8 @@
 ### 2.3. Trinity Architecture
 
 ![DApp_manual_2](images/DApp_manual_2.png)
-
 <br>
+
 ##  3. Definition of DApp
 
 There are two components in DApp: The DApp owenership and DApp document.
