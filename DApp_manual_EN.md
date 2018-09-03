@@ -1,4 +1,4 @@
-# 1.Table of Contents
+#   1.Table of Contents
 
 * Introduction to Trinity
 * Definition of DApp
@@ -8,7 +8,7 @@
 * Develop Ionic App
 * Plugin for Trinity
 
-## 2.Introduction to Trinity
+##  2.Introduction to Trinity
 
 * Trinity is a container that provides DApp running environment. Based on the trusted running environment of Elastos Runtime, Trinity provides a reliable running environment for applications to protect digital content.
 * Trinity make developers easy to develop their App by using Ionic frameworks.  Developers can create Elastos DApp package directly in the Ionic export directory. The created DApp can run on Android, IOS, Windows, Linux devices.
@@ -31,7 +31,7 @@
 
 ![DApp_manual_2](images/DApp_manual_2.png)
 
-## 3.Definition of DApp
+##  3.Definition of DApp
 
 There are two components in DApp: The DApp owenership and DApp document.
 
@@ -42,15 +42,15 @@ You can resell the DApp similar to  bitcoin. Of course you must pay for this tra
 There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
 
 
-## 4.Setup Development Environment
+##  4.Setup Development Environment
 
 ![DApp_manual_3](images/DApp_manual_3.png)
 
-## 5.Create Dapp
+##  5.Create Dapp
 
 ![DApp_manual_4](images/DApp_manual_4.png)
 
-## 6.Run the Dapp
+##  6.Run the Dapp
 
 ![DApp_manual_5](images/DApp_manual_5.png)
 
@@ -71,7 +71,7 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 ![DApp_manual_6](images/DApp_manual_6.png) ![DApp_manual_7](images/DApp_manual_7.png)
 
 
-## 7.Develop Ionic App
+##  7.Develop Ionic App
 
 ### 7.1.UI Components
 
@@ -81,6 +81,6 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 
 ![DApp_manual_8](images/DApp_manual_8.png)
 
-## 8.Plugin for Trinity
+##  8.Plugin for Trinity
 
 ![DApp_manual_9](images/DApp_manual_9.png)
