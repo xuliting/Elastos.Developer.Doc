@@ -50,7 +50,6 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 <br>
 
 ##  5. Create Dapp
-
 ![DApp_manual_4](images/DApp_manual_4.png)
 <br>
 
@@ -62,7 +61,6 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 
 1. Install Trinity
 2. Use Ionic to compile a encrypted epk document
-
     https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/build
 
     ```
