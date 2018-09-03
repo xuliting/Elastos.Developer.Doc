@@ -4,7 +4,7 @@
 
 ## 2. How to configure Wallet for payment
 
-### 2.1.Download and Install appmanager plugin
+### 2.1. Download and Install appmanager plugin
 
 Plugin Directory：
 
@@ -46,13 +46,13 @@ function (error) {});
 * memo and information: payment transaction remarks, memo will be written to Blockchain
 * backurl: the returned root path of the DApp after payment transaction
 
-## 4.Explnation of Returned Parameters 
+## 4. Explnation of Returned Parameters 
 
 ![DApp_Wallet_1](images/DApp_Wallet_1.png)
 
 * txId:  transaction ID,  32 bytes string
 
-## 5.The Effects of Ruuning in Trinity
+## 5. The Effects of Ruuning in Trinity
 
 ![DApp_1](images/DApp_1.png)
 ![DApp_2](images/DApp_2.png)
