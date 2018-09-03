@@ -7,8 +7,8 @@
 * Run the Dapp
 * Develop Ionic App
 * Plugin for Trinity
-
-
+>
+>
 
 ##  2. Introduction to Trinity
 
