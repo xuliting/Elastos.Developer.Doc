@@ -60,8 +60,8 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 
 ### 6.1.Run Inside Trinity
 
-*1 Install Trinity
-*2 Use Ionic to comply a encrypted epk document
+* 1 Install Trinity
+* 2 Use Ionic to comply a encrypted epk document
 
     https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/build
 
@@ -69,8 +69,8 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
     ionic cordova build android --prod && node epk xxx
     ```
 
-*3 Copy or download to epk to the device
-*4 Import the epk document through Trinity, tehn run on the desktop
+* 3 Copy or download to epk to the device
+* 4 Import the epk document through Trinity, tehn run on the desktop
 
 ![DApp_manual_6](images/DApp_manual_6.png) ![DApp_manual_7](images/DApp_manual_7.png)
 
