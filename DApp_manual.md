@@ -1,10 +1,10 @@
 # 1.目录
 
 * Introduction to Trinity
-* DApp 定义
-* 环境搭建
-* 创建应用
-* 运行应用
+* Definition of DApp
+* Setup Development Environment
+* Create Dapp
+* Run the Dapp
 * 调试应用
 * 内置插件
 
