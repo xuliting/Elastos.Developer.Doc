@@ -130,3 +130,15 @@ Open the document, go to the html directory, find index.html and click it to ope
 Refer to the last part of the documentation below to export the latest API documentation:
 
 [How to build API documentation](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/blob/master/README.md#Build_API_documentation)
+
+## What Elastos want to say to the developer
+
+Developers are welcome to work together to improve this document, including but not limited to the following ways to participate:
+
+1. Submit issues for documents that you don't understand.
+2. Improve the documentation. The default version is English version, you can submit multi-language version. If you submit a different language version, the file suffix will be expressed in a similar format as "_CN".
+3. Supplement the document, the current document is more "simple", if you can say more clearly, more clearly, more detailed, welcome to pull request to modify it.
+
+After the above workload is accepted, we will send you a number of ELA as a reward. At the same time, contributors will automatically become "Elastos Developer" and will enjoy priority trials, training and other benefits.
+
+In order to avoid omissions, contributors are requested to send an email to Dev-support@elastos.org. Thank you very much for your participation and contribution.
