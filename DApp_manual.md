@@ -1,6 +1,6 @@
 # 1.目录
 
-* Trinity 介绍
+* Introduction to Trinity
 * DApp 定义
 * 环境搭建
 * 创建应用
