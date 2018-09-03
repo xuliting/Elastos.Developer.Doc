@@ -1,16 +1,16 @@
-# 1. Introduction to Wallet
+# 1. Introduction to Elastos Wallet
 
 * Elastos Wallet provides token swap services.
 
-## 2. How to use Wallet for payment
+## 2. How to configure Wallet for payment
 
-### 2.1.Download and Install appmanager Plugin
+### 2.1.Download and Install appmanager plugin
 
 Plugin Directory：
 
 https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/appmanager
 
-Installation Instruction:
+Installation instructions:
 
 ```
 ionic cordova plugin add D:\project\Elastos.ORG.Wallet.Mobile\appmanager
@@ -29,7 +29,7 @@ function (error) {});
 
 ![DApp_DID_1](images/DApp_DID_1.png)
 
-## 3. Explanation of Parameters
+## 3. Explanation of configuring the parameters
 
 ```
 cordova.plugins.appmanager.StartApp("wallet/www/index.html" +
@@ -40,11 +40,11 @@ function (error) {});
 ```
 
 * “wallet/www/index.html”: Root path of target DApp, the cuurent path of wallet is wallet/www/index.html
-* type: logon type, payment is the pay value of current wallet
-* amount: the amount to pay, the value is the actual paymnet divided by 00000000
-* address: receivers address
-* memo and information: transaction remarks， memo will be written to Blockchain
-* backurl: the root path of the DApp after transaction
+* type: logon type, payment is the value for using current wallet
+* amount: the amount to pay, this value is the actual paymnet divided by 100000000
+* address: receiver address
+* memo and information: payment transaction remarks, memo will be written to Blockchain
+* backurl: the returned root path of the DApp after payment transaction
 
 ## 4.Explnation of Returned Parameters 
 
