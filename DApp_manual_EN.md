@@ -61,7 +61,7 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 ### 6.1.Run Inside Trinity
 
 1. Install Trinity
-2. Use Ionic to comply a encrypted epk document
+2. Use Ionic to compile a encrypted epk document
 
     https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/build
 
