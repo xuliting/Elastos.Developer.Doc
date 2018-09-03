@@ -8,6 +8,7 @@
 * Develop Ionic App
 * Plugin for Trinity
 <br>
+
 ##  2. Introduction to Trinity
 
 * Trinity is a container that provides DApp running environment. Based on the trusted running environment of Elastos Runtime, Trinity provides a reliable running environment for applications to protect digital content.
