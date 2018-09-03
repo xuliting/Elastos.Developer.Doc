@@ -43,7 +43,7 @@ The ownership in DApp is in the Blockchain like the bitcoin in the personal wall
 
 You can resell the DApp similar to  bitcoin if you play enough for the DApp games. Of course this you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
 
-There are various ways to dsirtribute teh DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
+There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
 
 
 ## 4.Setup Development Environment
