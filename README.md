@@ -52,7 +52,7 @@ By default, the API document is provided, which also contains the API of the CAR
 
 Open the document, go to the html directory, find index.html and click it to open the API document in the browser.
 
-[Elastos_SDK_API](Elastos_SDK_API.zip)
+[Elastos_SDK_API](SDK/Elastos_SDK_API.zip)
 
 Refer to the last part of the documentation below to export the latest API documentation:
 
@@ -62,7 +62,7 @@ Refer to the last part of the documentation below to export the latest API docum
 
 You can refer to Reflection API.
 
-[Elastos_SDK_API](Elastos_SDK_API.zip)
+[Elastos_SDK_API](SDK/Elastos_SDK_API.zip)
 
 ### 2.1. RPC
 
@@ -109,15 +109,15 @@ Document not yet available.
 
 ### 4.1. DApp Create, package, and install the entire process
 
-* [DApp_manual](DApp_manual.md)
+* [DApp_manual_CN](DApp_manual_CN.md)
 
 ### 4.2. Call DID login
 
-* [DApp_DID](DApp_DID.md)
+* [DApp_DID_CN](DApp_DID_CN.md)
 
 ### 4.3. Call Wallet to pay
 
-* [DApp_Wallet](DApp_Wallet.md)
+* [DApp_Wallet_CN](DApp_Wallet_CN.md)
 
 ## 5. Elastos Carrier
 
@@ -125,7 +125,7 @@ The API is provided by default.
 
 Open the document, go to the html directory, find index.html and click it to open the API document in the browser.
 
-[Carrier_API](Elastos.NET.Carrier.Native.SDK_API.zip)
+[Carrier_API](SDK/Elastos.NET.Carrier.Native.SDK_API.zip)
 
 Refer to the last part of the documentation below to export the latest API documentation:
 
