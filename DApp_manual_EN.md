@@ -10,7 +10,7 @@
 
 ## 2.Introduction to Trinity
 
-* Trinity is a container that provides DApp running environment. Based on the trusted running environment of Elastos Runtime, Trinity provides a reliable running environment for applications to protect digital content 。
+* Trinity is a container that provides DApp running environment. Based on the trusted running environment of Elastos Runtime, Trinity provides a reliable running environment for applications to protect digital content.
 * Trinity make developers easy to develop their App by using Ionic frameworks.  Developers can create Elastos DApp package directly in the Ionic export directory. The created DApp can run on Android, IOS, Windows, Linux devices.
 * Ionic is a powerful HTML5 application development framework (HTML5 Hybrid Mobile App Framework). The developers can use HTML, CSS and Javascript web develoment technique to create a near native App experiences. Ionic focus on outlook, users' experiences and interaction. It is most suitable for devlopment of HTML5 hybrid mobile App.
 * Ionic is a lightweight UI library. It is responsive with modern and beautiful outlook.
