@@ -37,9 +37,12 @@
 
 ## 3.Definition of DApp
 
-DApp有两部分组成：DApp的所有权和DApp文件。
+There are two components in DApp: The DApp owenership and DApp document.
 
-DApp的所有权登记在区块链上，就像比特币一样放在个人的钱包里，如果钱包里没有这个DApp的所有权的话，是无法运行它的。当然DApp作者可以设置免费模式。如果一个游戏DApp玩够了想转卖，可以像交易比特币一样去出售，当然这个交易必须使用支付，类似币币交换，可以是中心化的交换或者是去中心化的交换。DApp文件的分发方式可以是多种多样的，可以是在中心化网站，类似hao123，雅虎黄页，这样的推荐网站，或者是各种App Store，也可能是云盘，再或者是点对点发送文件。
+The ownership in Dapp is in the Blockchain like the bitcoin in the personal wallet. The DApp cannot run if there is no ownership in the wallet. Of course the DApp can configure as free app.You can resell the DApp as bitcoin if you play enough for the DApp games. Of course this you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
+
+There are various ways to dsirtribute teh DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
+
 
 ## 4.Setup Development Environment
 
