@@ -11,9 +11,9 @@
 ## 2.Introduction to Trinity
 
 * Trinity is a container that provides DApp running environment. Based on the trusted running environment of Elastos Runtime, Trinity provides a reliable running environment for applications to protect digital content 。
-* Trinity为了便于应用开发者，采用兼容ionic开发框架来支持应用开发。应用开发者可用直接把基于ionic的输出目录下的文件来生成DApp的包. 同一个DApp可运行在Android, IOS, Windows, Linux等设备上。
-* Ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。可以帮助您使用 Web 技术，比如 HTML、CSS 和 JavaScript 构建接近原生体验的移动应用程序。ionic 主要关注外观和体验，以及和你的应用程序的 UI 交互，特别适合用于基于 Hybird 模式的 HTML5 移动应用程序开发。
-* Ionic是一个轻量的手机UI库，具有速度快，界面现代化、美观等特点。
+* Trinity make the developer easy to develop their App by using Ionic frameworks.  Developers can create Elastos DApp package directly in the Ionic export directory. The created DApp can run on Android, IOS, Windows, Linux devices.
+* Ionic is a powerful HTML5 application development framework (HTML5 Hybrid Mobile App Framework). The developers can use HTML, CSS and Javascript web develoment technique to create a near native App experiences. Ionic focus on outlook, users' experiences and interaction. It is most suitable for devlopment of HTML5 hybrid mobile App.
+* Ionic is a lightweight UI library. It is responsive with modern and beautful outlook.
 
 ### 2.1.Fetures of Trinity
 
@@ -39,7 +39,7 @@
 
 There are two components in DApp: The DApp owenership and DApp document.
 
-The ownership in Dapp is in the Blockchain like the bitcoin in the personal wallet. The DApp cannot run if there is no ownership in the wallet. Of course the DApp can configure as free app.You can resell the DApp as bitcoin if you play enough for the DApp games. Of course this you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
+The ownership in DApp is in the Blockchain like the bitcoin in the personal wallet. The DApp cannot run if there is no ownership in the wallet. Of course the DApp can configure as free app. You can resell the DApp similar to  bitcoin if you play enough for the DApp games. Of course this you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
 
 There are various ways to dsirtribute teh DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
 
