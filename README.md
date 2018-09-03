@@ -109,15 +109,15 @@ Document not yet available.
 
 ### 4.1. DApp Create, package, and install the entire process
 
-* [DApp_manual](../DApp_manual)
+* [DApp_manual](https://github.com/elastos/Elastos.Developer.Doc/blob/master/DApp_manual)
 
 ### 4.2. Call DID login
 
-* [DApp_DID](../DApp_DID)
+* [DApp_DID](https://github.com/elastos/Elastos.Developer.Doc/blob/master/DApp_DID)
 
 ### 4.3. Call Wallet to pay
 
-* [DApp_Wallet](../DApp_Wallet)
+* [DApp_Wallet](https://github.com/elastos/Elastos.Developer.Doc/blob/master/DApp_Wallet)
 
 ## 5. Elastos Carrier
 
