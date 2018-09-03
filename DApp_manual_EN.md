@@ -8,6 +8,7 @@
 * Develop Ionic App
 * Plugin for Trinity
 
+
 ##  2.Introduction to Trinity
 
 * Trinity is a container that provides DApp running environment. Based on the trusted running environment of Elastos Runtime, Trinity provides a reliable running environment for applications to protect digital content.
@@ -31,6 +32,7 @@
 
 ![DApp_manual_2](images/DApp_manual_2.png)
 
+
 ##  3.Definition of DApp
 
 There are two components in DApp: The DApp owenership and DApp document.
@@ -46,9 +48,11 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 
 ![DApp_manual_3](images/DApp_manual_3.png)
 
+
 ##  5.Create Dapp
 
 ![DApp_manual_4](images/DApp_manual_4.png)
+
 
 ##  6.Run the DApp
 
@@ -80,6 +84,7 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 ### 7.2.Native APIs
 
 ![DApp_manual_8](images/DApp_manual_8.png)
+
 
 ##  8.Plugin for Trinity
 
