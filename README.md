@@ -109,19 +109,19 @@ Document not yet available.
 
 ### 4.1. DApp Create, package, and install the entire process
 
-* [DApp_manual](DApp_manual)
+* [DApp_manual](../DApp_manual)
 
 ### 4.2. Call DID login
 
-* [DApp_DID](DApp_DID)
+* [DApp_DID](../DApp_DID)
 
 ### 4.3. Call Wallet to pay
 
-* [DApp_Wallet](DApp_Wallet)
+* [DApp_Wallet](../DApp_Wallet)
 
 ## 5. Elastos Carrier
 
-The API is provided by default.
+The API is provided by default.
 
 Open the document, go to the html directory, find index.html and click it to open the API document in the browser.
 
