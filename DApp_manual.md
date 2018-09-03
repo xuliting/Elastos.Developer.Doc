@@ -5,7 +5,7 @@
 * Setup Development Environment
 * Create Dapp
 * Run the Dapp
-* 调试应用
+* Develop Ionic App
 * 内置插件
 
 ## 2.Trinity 介绍
