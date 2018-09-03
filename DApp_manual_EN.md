@@ -22,13 +22,9 @@
 ### 2.2.Advantages of Trinity
 
 * The Dapp run on the devices of users belong to them forever
-
 * DApp does not rely on the centralized server
-
 * the digital assets ownership are recorded in the Blockchain, the transactions are decentralized
-
 * The DApp can be freely packaged and created by users
-
 * Protect the digital assets. The assets owensership will not be disclosed and destroyed
 
 ### 2.3.Trinity Architecture
@@ -39,7 +35,7 @@
 
 There are two components in DApp: The DApp owenership and DApp document.
 
-The ownership in DApp is in the Blockchain like the bitcoin in the personal wallet. The DApp cannot run if there is no ownership in the wallet. But of course the DApp can configure as free app. 
+The ownership of DApp is in the Blockchain like the bitcoin in the personal wallet. The DApp cannot run if there is no ownership in the wallet. But of course the DApp can configure as free app. 
 
 You can resell the DApp similar to  bitcoin if you play enough for the DApp games. Of course this you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
 
