@@ -39,7 +39,7 @@ function (data) {},
 function (error) {});
 ```
 
-* “wallet/www/index.html”: Root path of target DApp, the cuurent path of wallet is wallet/www/index.html
+* “wallet/www/index.html”: Root path of target DApp, the current path of wallet is wallet/www/index.html
 * type: logon type, payment is the value for using current wallet
 * amount: the amount to pay, this value is the actual paymnet divided by 100000000
 * address: receiver address
