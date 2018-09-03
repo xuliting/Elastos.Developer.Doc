@@ -42,18 +42,18 @@ The ownership of DApp is in the Blockchain like the bitcoin in the personal wall
 You can resell the DApp similar to  bitcoin. Of course you must pay for this transaction similar to token swap. This swap can be either centralized or decentralized.
 
 There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
-
 <br>
+
 ##  4. Setup Development Environment
 
 ![DApp_manual_3](images/DApp_manual_3.png)
-
 <br>
+
 ##  5. Create Dapp
 
 ![DApp_manual_4](images/DApp_manual_4.png)
-
 <br>
+
 ##  6. Run the DApp
 
 ![DApp_manual_5](images/DApp_manual_5.png)
@@ -73,8 +73,8 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 4. Import the epk document through Trinity, then run on the desktop
 
 ![DApp_manual_6](images/DApp_manual_6.png) ![DApp_manual_7](images/DApp_manual_7.png)
-
 <br>
+
 ##  7. Develop Ionic App
 
 ### 7.1. UI Components
@@ -84,8 +84,8 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 ### 7.2. Native APIs
 
 ![DApp_manual_8](images/DApp_manual_8.png)
-
 <br>
+
 ##  8. Plugin for Trinity
 
 ![DApp_manual_9](images/DApp_manual_9.png)
