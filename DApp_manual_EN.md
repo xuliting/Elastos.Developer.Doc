@@ -50,7 +50,7 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 
 ![DApp_manual_4](images/DApp_manual_4.png)
 
-##  6.Run the Dapp
+##  6.Run the DApp
 
 ![DApp_manual_5](images/DApp_manual_5.png)
 
