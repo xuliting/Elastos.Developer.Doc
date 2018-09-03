@@ -31,7 +31,7 @@
 
 ![DApp_manual_2](images/DApp_manual_2.png)
 
-
+<br><br>
 ##  3. Definition of DApp
 
 There are two components in DApp: The DApp owenership and DApp document.
@@ -42,17 +42,17 @@ You can resell the DApp similar to  bitcoin. Of course you must pay for this tra
 
 There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffeent App Store, Cloud drives to peer to peer.
 
-
+<br><br>
 ##  4. Setup Development Environment
 
 ![DApp_manual_3](images/DApp_manual_3.png)
 
-
+<br><br>
 ##  5. Create Dapp
 
 ![DApp_manual_4](images/DApp_manual_4.png)
 
-
+<br><br>
 ##  6. Run the DApp
 
 ![DApp_manual_5](images/DApp_manual_5.png)
@@ -73,7 +73,7 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 
 ![DApp_manual_6](images/DApp_manual_6.png) ![DApp_manual_7](images/DApp_manual_7.png)
 
-
+<br><br>
 ##  7. Develop Ionic App
 
 ### 7.1. UI Components
@@ -84,7 +84,7 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 
 ![DApp_manual_8](images/DApp_manual_8.png)
 
-
+<br><br>
 ##  8. Plugin for Trinity
 
 ![DApp_manual_9](images/DApp_manual_9.png)
