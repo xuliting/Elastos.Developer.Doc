@@ -1,4 +1,4 @@
-# 1.目录
+# 1.Table of Contents
 
 * Introduction to Trinity
 * Definition of DApp
@@ -21,15 +21,15 @@
 
 ### 2.2.Advantages of Trinity
 
-* DApp运行在用户的个人设备上，永远属于用户
+* The Dapp run on the devices of users belong to them forever
 
-* DApp运行不依赖中心服务器
+* DApp does not rely on the centralized server
 
-* 数字产权登记在区块链上，去中介交易
+* the digital assets ownership are recorded in the Blockchain, the transactions are decentralized
 
-* DApp可以由用户自由打包生成，自由创新
+* The DApp can be freely packaged and created by users
 
-* 保护数字资产，产权不被泄露、破坏
+* Protect the digital assets. The assets owensership will not be disclosed abd destroyed
 
 ### 2.3.Trinity Architecture
 
