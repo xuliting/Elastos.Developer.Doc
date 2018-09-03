@@ -23,7 +23,7 @@
 
 * The Dapp run on the devices of users belong to them forever
 * DApp does not rely on the centralized server
-* the digital assets ownership are recorded in the Blockchain, the transactions are decentralized
+* Digital assets ownership are recorded in the Blockchain, the transactions are decentralized
 * The DApp can be freely packaged and created by users
 * Protect the digital assets. The assets owensership will not be disclosed and destroyed
 
