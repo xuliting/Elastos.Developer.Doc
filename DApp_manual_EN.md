@@ -45,7 +45,6 @@ There are various ways to dsirtribute the DApp such as Yahoo Yellow page, diffee
 <br>
 
 ##  4. Setup Development Environment
-
 ![DApp_manual_3](images/DApp_manual_3.png)
 <br>
 
