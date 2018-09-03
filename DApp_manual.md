@@ -55,8 +55,8 @@ DApp的所有权登记在区块链上，就像比特币一样放在个人的钱�
 
 ### 6.1.Run Inside Trinity
 
-* 1 安装Trinity基座程序
-* 2 调用Ionic扩展工具升级加密的epk文件
+* 1 Install Trinity
+* 2 Use Ionic to comply a encrypted epk document
 
     https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/build
 
@@ -64,8 +64,8 @@ DApp的所有权登记在区块链上，就像比特币一样放在个人的钱�
     ionic cordova build android --prod && node epk xxx
     ```
 
-* 3 将生成的epk文件拷贝或者下载到设备上
-* 4 通过Trinity 导入epk文件，回到桌面运行
+* 3 Copy or download to epk to the device
+* 4 Import the epk document through Trinity, tehn run on the desktop
 
 ![DApp_manual_6](images/DApp_manual_6.png) ![DApp_manual_7](images/DApp_manual_7.png)
 
