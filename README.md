@@ -4,9 +4,9 @@
 
 Developers are welcome to work together to improve this document, including but not limited to the following ways to participate:
 
-1. Submit issues for documents that you don't understand.
-2. Improve the documentation. The default version is English version, you can submit multi-language version. If you submit a different language version, the file suffix will be expressed in a similar format as "_CN".
-3. Supplement the document, the current document is more "simple", if you can say more clearly, more clearly, more detailed, welcome to pull request to modify it.
+* Submit issues for documents that you don't understand.
+* Improve the documentation. The default version is English version, you can submit multi-language version. If you submit a different language version, the file suffix will be expressed in a similar format as "_CN".
+* Supplement the document, the current document is more "simple", if you can say more clearly, more clearly, more detailed, welcome to pull request to modify it.
 
 After the above workload is accepted, we will send you a number of ELA as a reward. At the same time, contributors will automatically become "Elastos Developer" and will enjoy priority trials, training and other benefits.
 
@@ -71,6 +71,10 @@ Refer to the last part of the documentation below to export the latest API docum
 [How_to_Export_API](https://github.com/elastos/Elastos.RT/blob/master/Docs/DocTools/How_to_Export_API.md)
 
 ## 2. CAR SDK
+
+The CAR SDK (CAR Software Development Kit) is a development kit for the native developers of the Elastos.RT (https://github.com/elastos/Elastos.RT) project. The main infrastructure services of Elastos are integrated through the Elastos.RT project and packaged into a Car interface for developers to use. Currently CAR SDK can support RPC and reflection, its basic services include: Carrier, Wallet and Did.
+
+Traditionally, APP can expand its capabilities by including the SDK of Elastos, and obtain the typical capabilities of blockchains such as identity authentication and trusted records. For more existing apps, the lightest way is to embed the SDK, which is used to access some of the blockchain functions to achieve partial decentralization. For example, you can bind your own users through the ID provided by the SDK for identity authentication. You can also save the hash of important content in the blockchain through the API provided by the SDK, thus playing the role of notarization/certification.
 
 You can refer to Reflection API.
 
