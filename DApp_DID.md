@@ -1,24 +1,23 @@
-# 1.DID 介绍
+# 1.Introduction to DID
 
-* DID是区块链世界的身份标识，类似于现实世界的身份证
+* DID is the identity of Blockchain similar to ID card of the real world
+* Elastos DID centrally control the wallets
 
-* Elastos DID在Wallet统一集成
+## 2. Explanation of Configuring the DID logon
 
-## 2.调用 DID 登录说明
+### 2.1. Download and install the appmanager plugin
 
-### 2.1.下载和安装 appmanager 插件
-
-插件目录：
+Plugin source path：
 
 https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/appmanager
 
-安装指令:
+Installation instructions:
 
 ```
 ionic cordova plugin add D:\project\Elastos.ORG.Wallet.Mobile\appmanager
 ```
 
-### 2.2.在需要使用 DID 登录的 Page 里面加入如下的代码
+### 2.2. Add the following code snippet to the page for DID logon
 
 ```
 declare let cordova: any;
@@ -30,7 +29,7 @@ function (error) {});
 
 ![DApp_DID_1](images/DApp_DID_1.png)
 
-## 3.调用参数说明
+## 3. Explanation of Input parameters
 
 ```
 cordova.plugins.appmanager.StartApp("wallet/www/index.html" +
@@ -39,29 +38,29 @@ function (data) {},
 function (error) {});
 ```
 
-* “wallet/www/index.html”：目标的Dapp根路径，目前钱包的路径是wallet/www/index.html
-* type: 登录类型，目前DID登录值为did_login
-* message: 用于加密校验的消息
-* backurl: 获取到did后返回的DApp的根路径
+* “wallet/www/index.html”：Root path of target DApp, the current path of wallet is wallet/www/index.html
+* type: logon type, did_login is the current DID value 
+* message: use for encrypted verification
+* backurl: the returned root path of the DApp after otaining the DID value
 
-## 4.返回参数说明
+## 4. Explanation of Returned Parameters
 
 ![DApp_DID_2](images/DApp_DID_2.png)
 
-* didNum: DID数字，32位的一个字符串
-* sign: 对message签名后的结果
-* didPubkey: 用户的公钥
-* Message: Sign的输入参数
-* Check_DID函数我们会直接输出,在应用的index.html 包括下面一行代码即可
+* didNum: the number of DID，32 bytes string
+* sign: teh signed message
+* didPubkey: user's public key
+* Message: input parameter for signing
+* The authorization will be checked by function Check_DID, just put the following line in index.html 
 
   ```
   <script src="assets/checkDID.js"></script>
   ```
 
-* checkDID.js的文件也在
+* the checkDID.js file is in the following url
 https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/build
 
-## 5.运行在 Trinity 内的效果
+## 5.Effect of Running in Trinity
 
 ![DApp_1](images/DApp_1.png)
 ![DApp_2](images/DApp_2.png)
