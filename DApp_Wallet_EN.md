@@ -1,6 +1,6 @@
 # 1. Introduction to Elastos Wallet
 
-* Elastos Wallet provides token swap services.
+* Elastos Wallet provides token transfer services.
 
 ## 2. How to configure Wallet for payment
 
@@ -29,7 +29,7 @@ function (error) {});
 
 ![DApp_DID_1](images/DApp_DID_1.png)
 
-## 3. Explanation of configuring the parameters
+## 3. Explanation of Configuring the parameters
 
 ```
 cordova.plugins.appmanager.StartApp("wallet/www/index.html" +
@@ -46,7 +46,7 @@ function (error) {});
 * memo and information: payment transaction remarks, memo will be written to Blockchain
 * backurl: the returned root path of the DApp after payment transaction
 
-## 4. Explnation of Returned Parameters 
+## 4. Explanation of Returned Parameters 
 
 ![DApp_Wallet_1](images/DApp_Wallet_1.png)
 
