@@ -127,7 +127,7 @@ The main interface in DID are as follows. For the specific interface methods, re
 
 * REST API
 
-  - No need in the future, no offer.
+  -[REST API](https://github.com/elastos/Elastos.ELA/blob/dev/docs/Elastos_Wallet_Node_API_CN.md)
 
 * JSON RPC API
 
