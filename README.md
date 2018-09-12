@@ -96,7 +96,7 @@ The main interface in RPC are as follows. For the specific interface methods, re
 The examples that currently use them are the following two, which are also described earlier.
 
   - [How To Call A Remote CAR Component](https://github.com/elastos/Elastos.RT/blob/master/Docs/How_To_Call_A_Remote_CAR_Component.md)
-  
+
    - [how to implement car by java](https://github.com/elastos/Elastos.RT/blob/master/Docs/ImplementCarByJava/how_to_implement_car_by_java.md)
 
 ### 2.2. Wallet
@@ -121,6 +121,11 @@ The main interface in DID are as follows. For the specific interface methods, re
 * IDIDChecker
 * IDIDInspector
 
+### 2.4 Wallet Service
+
+* Built-in use case for offline wallet Java version
+  * [Link](https://github.com/elastos/Elastos.ORG.Wallet.Service.git)
+
 ## 3. Blockchain API
 
 ### 3.1. Node API
@@ -137,19 +142,43 @@ The main interface in DID are as follows. For the specific interface methods, re
 
 Document not yet available.
 
+### 3.3 Deploy ELA nodes
+
+* [Link](https://github.com/elastos/Elastos.ELA/blob/master/README.md)
+
+### 3.4 Integrate exchange
+
+* Java offline signature
+
+  * [Link_CN](Doc/Java_offline_signature_CN.md)
+
+  * [PDF_CN](Doc/Java_offline_signature_CN.pdf)
+
 ## 4. H5 DApp Programming
 
 ### 4.1. DApp Create, package, and install the entire process
 
-* [DApp_manual_CN](DApp_manual_CN.md)
+* DApp_manual
+
+  * [EN](Doc/DApp_manual.md)
+
+  * [CN](Doc/DApp_manual_CN.md)
 
 ### 4.2. Call DID login
 
-* [DApp_DID_CN](DApp_DID_CN.md)
+* DApp_DID
+
+  * [EN](Doc/DApp_DID.md)
+
+  * [CN](Doc/DApp_DID_CN.md)
 
 ### 4.3. Call Wallet to pay
 
-* [DApp_Wallet_CN](DApp_Wallet_CN.md)
+* DApp_Wallet
+
+  * [EN](Doc/DApp_Wallet.md)
+
+  * [CN](Doc/DApp_Wallet_CN.md)
 
 ## 5. Elastos Carrier
 
