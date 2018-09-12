@@ -27,7 +27,7 @@ function (data) {},
 function (error) {});
 ```
 
-![DApp_DID_1](images/DApp_DID_1.png)
+![DApp_DID_1](../images/DApp_DID_1.png)
 
 ## 3. Explanation of Input parameters
 
@@ -39,19 +39,19 @@ function (error) {});
 ```
 
 * “wallet/www/index.html”：Root path of target DApp, the current path of wallet is wallet/www/index.html
-* type: logon type, did_login is the current DID value 
+* type: logon type, did_login is the current DID value
 * message: use for encrypted verification
 * backurl: the returned root path of the DApp after otaining the DID value
 
 ## 4. Explanation of Returned Parameters
 
-![DApp_DID_2](images/DApp_DID_2.png)
+![DApp_DID_2](../images/DApp_DID_2.png)
 
 * didNum: the number of DID，32 bytes string
 * sign: teh signed message
 * didPubkey: user's public key
 * Message: input parameter for signing
-* The authorization will be checked by function Check_DID, just put the following line in index.html 
+* The authorization will be checked by function Check_DID, just put the following line in index.html
 
   ```
   <script src="assets/checkDID.js"></script>
@@ -62,6 +62,6 @@ https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/build
 
 ## 5.Effect of Running in Trinity
 
-![DApp_1](images/DApp_1.png)
-![DApp_2](images/DApp_2.png)
-![DApp_DID_3](images/DApp_DID_3.png)
+![DApp_1](../images/DApp_1.png)
+![DApp_2](../images/DApp_2.png)
+![DApp_DID_3](../images/DApp_DID_3.png)
