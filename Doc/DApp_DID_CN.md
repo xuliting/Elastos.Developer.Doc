@@ -28,7 +28,7 @@ function (data) {},
 function (error) {});
 ```
 
-![DApp_DID_1](images/DApp_DID_1.png)
+![DApp_DID_1](../images/DApp_DID_1.png)
 
 ## 3.调用参数说明
 
@@ -46,7 +46,7 @@ function (error) {});
 
 ## 4.返回参数说明
 
-![DApp_DID_2](images/DApp_DID_2.png)
+![DApp_DID_2](../images/DApp_DID_2.png)
 
 * didNum: DID数字，32位的一个字符串
 * sign: 对message签名后的结果
@@ -63,6 +63,6 @@ https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/build
 
 ## 5.运行在 Trinity 内的效果
 
-![DApp_1](images/DApp_1.png)
-![DApp_2](images/DApp_2.png)
-![DApp_DID_3](images/DApp_DID_3.png)
+![DApp_1](../images/DApp_1.png)
+![DApp_2](../images/DApp_2.png)
+![DApp_DID_3](../images/DApp_DID_3.png)

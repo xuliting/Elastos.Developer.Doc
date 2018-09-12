@@ -121,7 +121,7 @@ The main interface in DID are as follows. For the specific interface methods, re
 * IDIDChecker
 * IDIDInspector
 
-### 2.4 Wallet Service
+### 2.4. Wallet Service
 
 * Built-in use case for offline wallet Java version
   * [Link](https://github.com/elastos/Elastos.ORG.Wallet.Service.git)
@@ -142,11 +142,11 @@ The main interface in DID are as follows. For the specific interface methods, re
 
 Document not yet available.
 
-### 3.3 Deploy ELA nodes
+### 3.3. Deploy ELA nodes
 
 * [Link](https://github.com/elastos/Elastos.ELA/blob/master/README.md)
 
-### 3.4 Integrate exchange
+### 3.4. Integrate exchange
 
 * Java offline signature
 
