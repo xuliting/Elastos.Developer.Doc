@@ -16,7 +16,10 @@ In order to avoid omissions, contributors are requested to send an email to Dev-
 
 ### 1.1. How to write a CAR component
 
-[CAR Language](https://github.com/elastos/Elastos.RT/blob/master/Docs/CAR_Language.md)
+* CAR Language
+
+  - [EN](https://github.com/elastos/Elastos.RT/blob/master/Docs/CAR_Language.md)
+  - [CN](https://github.com/elastos/Elastos.RT/blob/master/Docs/CAR_Language_CN.md)
 
 ### 1.2. Compile the CAR component
 
@@ -39,8 +42,9 @@ In order to avoid omissions, contributors are requested to send an email to Dev-
   - [How to use CAR in ios](https://github.com/elastos/Elastos.RT/blob/master/Sources/Sample/HelloCarDemo/iOS/README.md)
 
 * Ubuntu
-
-  - [How To Write A Car Component](https://github.com/elastos/Elastos.RT/blob/master/Docs/How_To_Write_A_Car_Component.md)
+  * How To Write A Car Component
+    - [EN](https://github.com/elastos/Elastos.RT/blob/master/Docs/How_To_Write_A_Car_Component.md)
+    - [CN](https://github.com/elastos/Elastos.RT/blob/master/Docs/How_To_Write_A_Car_Component_CN.md)
 
 ### 1.4. How to call a remote CAR component
 
