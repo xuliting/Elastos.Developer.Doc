@@ -202,6 +202,8 @@ Refer to the last part of the documentation below to export the latest API docum
 
 [How to build API documentation](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/blob/master/README.md#Build_API_documentation)
 
+* [FAQ](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/wiki/How-to-use-Carrier-API)
+
 ### Android
 
 [Code](https://github.com/elastos/Elastos.NET.Carrier.Android.SDK)
