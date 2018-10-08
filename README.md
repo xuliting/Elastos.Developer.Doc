@@ -128,7 +128,8 @@ The main interface in DID are as follows. For the specific interface methods, re
 ### 2.4. Wallet Service
 
 * Built-in use case for offline wallet Java version
-  * [Link](https://github.com/elastos/Elastos.ORG.Wallet.Service.git)
+  * [Elastos.ORG.Wallet.Service Code](https://github.com/elastos/Elastos.ORG.Wallet.Service.git)
+  * [Elastos.ORG.Wallet.Service documentation](https://walletservice.readthedocs.io)
 
 ## 3. Blockchain API
 
