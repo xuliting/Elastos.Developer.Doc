@@ -176,6 +176,24 @@ Document not yet available.
 
   * [CN](Doc/DApp_DID_CN.md)
 
+* DID Spec
+
+  This is a draft，which is a document that introduces the id side-chain interface.
+
+  * [CN](Doc/Elastos_DID_Spec(draft)_CN.docx)
+
+* DID programming guide
+
+  This is a draft，which is a description of how to use did, recommendations and specifications.
+
+  * [CN](Doc/Elastos_DID_Programming_Guide(draft)_CN.docx)
+
+* DID service
+
+  This is a draft，which is the interface that introduces the did service we are doing. It is based on the "DID programming guide".
+
+  * [CN](Doc/Elastos_DID_Service(draft)_CN.docx)
+
 ### 4.3. Call Wallet to pay
 
 * DApp_Wallet
