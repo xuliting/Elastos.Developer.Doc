@@ -130,7 +130,7 @@ The main interface in DID are as follows. For the specific interface methods, re
 * Built-in use case for offline wallet Java version
 
   * [Elastos.ORG.Wallet.Service Code](https://github.com/elastos/Elastos.ORG.Wallet.Service.git)
-  
+
   * [Elastos.ORG.Wallet.Service documentation](https://walletservice.readthedocs.io)
 
 ## 3. Blockchain API
@@ -151,7 +151,9 @@ Document not yet available.
 
 ### 3.3. Deploy ELA nodes
 
-* [Link](https://github.com/elastos/Elastos.ELA/blob/master/README.md)
+* [MainChain_deploy](https://github.com/elastos/Elastos.ELA/blob/master/README.md)
+
+* [SideChain_deploy](Doc/ELA_SideChain_deploy.md)
 
 ### 3.4. Integrate exchange
 
