@@ -5,7 +5,7 @@
 
 都使用 `release_v0.0.1` 分支的代码编译出可执行文件，拷贝配置文件模版和 `ela-cli` 可执行文件
 
-> 测试环境最少可以使用两个节点，每个节点上都部署 `Arbiter`和 `Side`应用程序， 在生产应用环境建议最少使用 5个 `Arbiter`节点和更多的 `Side`节点
+> 测试环境最少可以使用两个节点，每个节点上都部署 `Arbiter` 和 `Side` 应用程序， 在生产应用环境建议最少使用 5个 `Arbiter` 节点和更多的 `Side` 节点
 
 配置文件示例：
 
@@ -54,7 +54,7 @@
 }
 ```
 
-> 比无侧链环境的主链多了 `Arbiters` 项目的配置，这里面的内容是所有 `Arbiter` 节点中主账户的 `Public Key`
+> 比无侧链环境的主链多了 `Arbiters` 项目的配置，这里面的内容是所有 `Arbiter` 节点中主账户的 `Public Key`
 
 > 通常生产环境使用 `20xxx` 端口；测试环境使用 `21xxx` 端口；其他测试环境使用 `23xxx` 端口
 
@@ -114,7 +114,7 @@
 }
 ```
 
-> 这里 `MainChainFoundationAddress` `FoundationAddress` 地址都要设置为这个固定的基金会地址（或者更改源码）
+> 这里 `MainChainFoundationAddress` `FoundationAddress` 地址都要设置为这个固定的基金会地址（或者更改源码）
 
 > 侧链的所有节点应该设置为不自动挖矿
 
@@ -172,9 +172,9 @@
 }
 ```
 
-> 这里 `FoundationAddress` 地址都要设置为这个固定的基金会地址（或者更改源码）
+> 这里 `FoundationAddress` 地址都要设置为这个固定的基金会地址（或者更改源码）
 
-> `GenesisBlock` 要配置 `SideChain` 创世块（区块高度为0）的 `Hash` ；获取方法后面有介绍
+> `GenesisBlock` 要配置 `SideChain` 创世块（区块高度为0）的 `Hash` ；获取方法后面有介绍
 
 > `KeystoreFile` 要配置为 `Arbiter` 节点生成的副账户的 `keystore.dat` 文件；生成方法后面有介绍
 
@@ -190,7 +190,7 @@ curl http://localhost:20604/api/v1/block/hash/0
 
 > 将上面获取到的创世块 `hash` 填入 `Arbiter` 配置文件相应位置
 
-> 使用 `ela-cli wallet -g <Hash>`命令来生成一个以 `X` 开始的跨链充值地址，这个地址在进行跨链充值时候需要作为 `Output` 地址
+> 使用 `ela-cli wallet -g <Hash>`命令来生成一个以 `X` 开始的跨链充值地址，这个地址在进行跨链充值时候需要作为 `Output` 地址
 
 3. 生成 `Aribter` 主副账户并启动
 
@@ -214,9 +214,9 @@ curl http://localhost:20604/api/v1/block/hash/0
 
 * 启动侧链获取创始块hash
 
-* 在所有`arbiter`节点创建对应于本侧链的账户: `./ela-cli wallet -c --name keystore-another.dat`，并为所有账户充值1 ELA以上
+* 在所有`arbiter`节点创建对应于本侧链的账户: `./ela-cli wallet -c --name keystore-another.dat`，并为所有账户充值1 ELA以上
 
-* 在`arbiter`配置文件中`"SideNodeList"`配置项中添加如下配置：
+* 在`arbiter`配置文件中 `"SideNodeList"` 配置项中添加如下配置：
 
 ```json
 {
