@@ -133,7 +133,7 @@ The main interface in DID are as follows. For the specific interface methods, re
 
   * [Elastos.ORG.Wallet.Service documentation](https://walletservice.readthedocs.io)
 
-## 3. Blockchain API
+## 3. ELA Blockchain
 
 ### 3.1. Node API
 
@@ -155,6 +155,10 @@ Document not yet available.
 
 * [SideChain_deploy](Doc/ELA_SideChain_deploy.md)
 
+* [Connect to testnet](https://github.com/elastos/Elastos/wiki/Connect-to-testnet)
+
+* [Connect to the SideChain of testnet](Doc/Connect_to_SideChain_of_testnet.md)
+
 ### 3.4. Integrate exchange
 
 * Java offline signature
@@ -162,6 +166,10 @@ Document not yet available.
   * [Link_CN](Doc/Java_offline_signature_CN.md)
 
   * [PDF_CN](Doc/Java_offline_signature_CN.pdf)
+
+* Java Wallet document
+
+  * [PDF](Doc/Java_wallet_doc.pdf)
 
 ## 4. H5 DApp Programming
 
