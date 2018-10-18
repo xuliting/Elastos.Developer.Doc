@@ -151,13 +151,33 @@ Document not yet available.
 
 ### 3.3. Deploy ELA nodes
 
-* [MainChain_deploy](https://github.com/elastos/Elastos.ELA/blob/master/README.md)
+#### 3.3.1 Build a node and connect to the test environment
 
-* [SideChain_deploy](Doc/ELA_SideChain_deploy.md)
+* Build a node of MainChain and connect to the test environment
 
-* [Connect to testnet](https://github.com/elastos/Elastos/wiki/Connect-to-testnet)
+  * [MainChain_deploy](https://github.com/elastos/Elastos.ELA/blob/master/README.md)
 
-* [Connect to the SideChain of testnet](Doc/Connect_to_SideChain_of_testnet.md)
+  * [Connect to testnet](https://github.com/elastos/Elastos/wiki/Connect-to-testnet)
+
+* Build a node of IDChain and connection test environment
+
+  * [SideChain_deploy](Doc/ELA_SideChain_deploy.md)
+
+  * [Connect to the SideChain of testnet](Doc/Connect_to_SideChain_of_testnet.md)
+
+#### 3.3.2 Building a test chain
+
+Building test chains can be divided into three types:
+
+* Build a MainChain
+
+* Build a IDChain
+
+* Build a SideChain
+
+Specific steps can refer to the following document content:
+
+* [Build_test_Chain](Doc/Build_test_Chain.md)
 
 ### 3.4. Integrate exchange
 
