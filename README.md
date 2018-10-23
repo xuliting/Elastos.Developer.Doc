@@ -179,7 +179,7 @@ Specific steps can refer to the following document content:
 
 * [Build_test_Chain](Doc/Build_test_Chain.md)
 
-### 3.4 Chain trading
+### 3.4 Create a transaction
 
 #### 3.4.1 Create a transaction on the MainChain
 
