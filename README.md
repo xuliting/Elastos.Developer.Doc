@@ -179,9 +179,9 @@ Specific steps can refer to the following document content:
 
 * [Build_test_Chain](Doc/Build_test_Chain.md)
 
-### 3.4 Create a transaction
+### 3.4. Create a transaction
 
-#### 3.4.1 Create a transaction on the MainChain
+#### 3.4.1. Create a transaction on the MainChain
 
 * Create a transaction using Utilities.Java
   * [Java_offline_signature_CN](Doc/Java_offline_signature_CN.md)
@@ -190,7 +190,7 @@ Specific steps can refer to the following document content:
 
   * [ela-cli_Client_usage_MainChain](Doc/ela-cli_Client_usage_MainChain.md)
 
-#### 3.4.2 Create a transaction on the SideChain
+#### 3.4.2. Create a transaction on the SideChain
 
 * Create a transaction using ela-cli
   * [ela-cli_Client_usage_SideChain](Doc/ela-cli_Client_usage_SideChain.md)
