@@ -12,8 +12,11 @@
 2. 准备编译环境并编译编译ela节点程序
 
 按照[README](https://github.com/elastos/Elastos.ELA/blob/master/README.md)设置编译环境并编译节点程序。
+
 #### 1.1.2 下载release版本
+
 从[Release](https://github.com/elastos/Elastos.ELA/releases)可以获得ubuntu版本的ela程序。
+
 ### 1.2 修改config.json
 
 1. config.json为模板
