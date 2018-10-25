@@ -45,7 +45,7 @@ function (error) {});
 
 ## 4. Explanation of Returned Parameters
 
-![DApp_DID_2](../images/DApp_DID_2.png)
+![DApp_DID_2](../images/DApp_DID_2.png)
 
 * didNum: the number of DID，32 bytes string
 * sign: teh signed message
