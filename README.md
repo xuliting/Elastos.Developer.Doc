@@ -257,7 +257,7 @@ Elastos Carrier solves the problem that the app nodes on the Internet have no pu
 
 Elastos Carrier provides cross-network access capabilities. For example, any two app nodes can be in different subnets, one is at home wifi environment, another is at corporate wifi environment. App can communicate directly by using an "address" string and confirming the authorization by adding "friends" to each other.
 
-### API
+### 5.1. API
 
 #### C++
 
@@ -281,12 +281,12 @@ Refer to the last part of the documentation below to export the latest API docum
 
 [Code](https://github.com/elastos/Elastos.NET.Carrier.Nodejs.SDK)
 
-### Sample
+### 5.2. Sample
 
 <https://github.com/elastos/Elastos.Developer.Doc/tree/master/Demo/android/CarrierDemo>
 
 [Carrier_For_Android_CN]((Doc/Carrier_For_Android_CN.md))
 
-### FAQ
+### 5.3. FAQ
 
 * [FAQ](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/wiki/How-to-use-Carrier-API)
