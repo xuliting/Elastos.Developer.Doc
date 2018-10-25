@@ -117,7 +117,14 @@ https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/jsonrpc_apis.md
 
 ### 2.1 准备IDChain节点程序
 
-编译后程序名为side，建议修改为did
+#### 2.1.1 编译IDChain节点程序DID
+
+1. 下载代码https://github.com/elastos/Elastos.ELA.SideChain
+2. 准备编译环境并编译IDChain节点程序DID
+
+如未本地未设置go编译环境，可以按照[README@ELA](https://github.com/elastos/Elastos.ELA/blob/master/README.md)设置编译环境，然后按照[README@DID](https://github.com/elastos/Elastos.ELA.SideChain/blob/master/README.md)编译DID节点程序。
+
+按照[README](https://github.com/elastos/Elastos.ELA/blob/master/README.md)设置编译环境并编译节点程序。
 
 ### 2.2 准备config.json
 
