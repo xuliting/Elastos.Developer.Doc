@@ -68,4 +68,4 @@
 ## 8 通过Session发送数据
 
 1. AB双方的 Session 均处于 Connected 状态时，可以通过 Stream.writeData() 函数向对方发送数据，可参照 CarrierSessionHelper.java 的 sendData()。
-2. 当A发送数据给B后，B会收到 onStreamData() 回调，可以在 DefaultCarrierHandler.java 重载此函数进行数据处理。
+2. 当A发送数据给B后，B会收到 onStreamData() 回调，可以在 DefaultSessionHandler.java 重载此函数进行数据处理。
