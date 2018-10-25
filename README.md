@@ -285,7 +285,11 @@ Refer to the last part of the documentation below to export the latest API docum
 
 demo： <https://github.com/elastos/Elastos.Developer.Doc/tree/master/Demo/android>
 
-doc：[Carrier_For_Android_CN](Doc/Carrier_For_Android_CN.md)
+doc：
+
+* [EN](Doc/Carrier_For_Android.md)
+
+* [CN](Doc/Carrier_For_Android_CN.md)
 
 ### 5.3. FAQ
 
