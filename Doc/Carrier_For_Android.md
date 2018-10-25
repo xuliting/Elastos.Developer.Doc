@@ -1,17 +1,17 @@
-# Carrier for Android 开发文档
+# Carrier for Android development document
 
-## 1 环境准备
+## 1 Environmental preparation
 
-1. 两台API21以上的 Android 手机。
-2. 安装有 AndroidStudio 的PC机。
+1. Two Android phones with API21 or higher.
+2. A personal computer with AndroidStudio installed.
 
-## 2 建立工程
+## 2 Build the project
 
-1. 在网址 <https://github.com/elastos/Elastos.NET.Carrier.Android.SDK/releases> 中下载 android.sdk-debug.tar.gz。
-2. 在 AndroidStudio 中新建 android 工程如 CarrierDemo，minimum SDK 选择 API21 或以上。
-3. 将 android.sdk-debug.tar.gz 中的 elacarrier.jar 和 libs/* 文件夹拷贝到 CarrierDemo/app/libs/ 下。
+1. Download android.sdk-debug.tar.gz at <https://github.com/elastos/Elastos.NET.Carrier.Android.SDK/releases>.
+2. Create a new android project like CarrierDemo in AndroidStudio, select API21 or above for minimum SDK.
+3. Copy the elacarrier.jar and libs/* folders in android.sdk-debug.tar.gz to CarrierDemo/app/libs/.
     ![2.3](../images/Carrier_For_Android/2.3.png)
-4. 修改 CarrierDemo/app/build.gradle，在其中添加：
+4. Modify CarrierDemo/app/build.gradle, Add the following to it：
     ````java
     android {
         ......
@@ -22,13 +22,13 @@
         }
     }
     ````
-5. 在 AndroidManifest.xml 中添加 internet 权限。
+5. Add internet permissions in AndroidManifest.xml.
 
-## 3 启动 Carrier
+## 3 Start Carrier
 
-1. 新建 DefaultCarrierOptions.java，并继承于 Carrier.Options。设置 BootstrapNodes，可参照 CarrierDemo/app/src/main/java/org/elastos/carrier/demo/DefaultCarrierOptions.java。
-2. 新建 DefaultCarrierHandler.java，并继承于 AbstractCarrierHandler。可参照 CarrierDemo/app/src/main/java/org/elastos/carrier/demo/DefaultCarrierHandler.java。
-3. 新建 CarrierHelper.java，用于对外提供简单的 API。新建 startCarrier函数用于启动 Carrier。在这个函数中添加 DefaultCarrierHandler 和 DefaultCarrierHandler 的实例，最后调用 Carrier.start()。 实现可参照 CarrierDemo/app/src/main/java/org/elastos/carrier/demo/CarrierHelper.java。
+1. Create a new DefaultCarrierOptions.java and inherit it from Carrier.Options. Set BootstrapNodes, you can refer to CarrierDemo/app/src/main/java/org/elastos/carrier/demo/DefaultCarrierOptions.java.
+2. Create a new DefaultCarrierHandler.java and inherit from the AbstractCarrierHandler, you can refer to CarrierDemo/app/src/main/java/org/elastos/carrier/demo/DefaultCarrierHandler.java.
+3. Create a new CarrierHelper.java to provide a simple API. The new startCarrier function is used to start the Carrier. Add an instance of DefaultCarrierHandler and DefaultCarrierHandler to this function, and finally call Carrier.start(). The implementation can refer to CarrierDemo/app/src/main/java/org/elastos/carrier/demo/CarrierHelper.java.
     ```java
     public final class CarrierHelper {
         ......
@@ -49,21 +49,21 @@
         }
     }
     ```
-4. 在 MainActivity.java 中调用 CarrierHelper.startCarrier()。
-5. 在 DefaultCarrierHandler.java 中重载 onConnection() 函数，监听 Carrier 和 BootstrapNode 的连接状态（Online/Offline）。
-6. 运行 CarrierDemo， Carrier 就启动起来了。
+4. Call CarrierHelper.startCarrier() in MainActivity.java.
+5. Override the onConnection() function in DefaultCarrierHandler.java to listen for the connection state of the Carrier and BootstrapNode (Online/Offline).
+6. Run CarrierDemo and the carrier will start up.
 
-## 4 显示和扫描地址（可选）
+## 4 Display and scan address (optional)
 
-为了快速添加好友，在 CarrierDemo 中添加了扫描二维码功能，这个功能与 Carrier 使用无关，可忽略。
+In order to add friends quickly, the Scan QR code function has been added to CarrierDemo. This function is independent of Carrier usage and can be ignored.
 
-1. 显示地址。添加 MyAddr 按钮，并实现点击显示二维码，具体实现可参照 MainActivity.java 的 showAddress() 函数。
-2. 扫描好友地址。添加 CAMERA， VIBRATE 等权限，添加 ScanAddr 按钮，并实现点击扫描二维码，具体实现可参照 MainActivity.java 的 scanAddress() 函数。
+1. Display the address. Add the MyAddr button and click to display the QR code. For details, see the showAddress() function of MainActivity.java.
+2. Scan your friend's address. Add CAMERA, VIBRATE and other permissions, add ScanAddr button, and click to scan the QR code. The specific implementation can refer to the scanAddress() function of MainActivity.java.
 
-## 5 添加好友
+## 5 Add a friend
 
-1. 两个手机分别称为A和B。均安装有 CarrierDemo。
-2. 在A、B双方都处于 Online 状态时，A获取到B的好友地址，并调用 addFriend() 函数添加好友B，该函数使用的是B的 Address。可参照 CarrierHelper.java 的 addFriend()。
+1. The two phones are called A and B respectively. CarrierDemo is installed.
+2. When both A and B are in the Online state, A obtains the B's friend address and calls the addFriend() function to add B. This function uses B's Address. See addHelp() for CarrierHelper.java.
     ```java
     public final class CarrierHelper {
         ......
@@ -84,7 +84,7 @@
         }
     }
     ```
-3. 当A调用 addFriend() 后，被添加的一方会收到 onFriendRequest() 回调，在该回调中， Carrier 会将A的 Address 转换为 UserId，从此处开始， Carrier 将全部使用 UserId 进行身份辨识。可以在 DefaultCarrierHandler.java 重载此函数进行好友认证处理，可参照 CarrierHelper.java 的 acceptFriend()。
+3. When A calls addFriend(), the added party receives the onFriendRequest() callback, in which the Carrier converts A's Address to UserId, from which Carrier will use UserId for identification. This function can be overridden in DefaultCarrierHandler.java for friend authentication processing. Refer to acceptHelp() of CarrierHelper.java.
     ```java
     public final class CarrierHelper {
         ......
@@ -103,12 +103,12 @@
         }
     }
     ```
-4. 通过B的认证后，A会收到 onFriendAdded() 回调，可以在 DefaultCarrierHandler.java 重载此函数进行后续处理。
-5. 已经存在的好友不能重复添加，可以通过 getFriends() 函数获取好友列表。
+4. After passing B's authentication, A will receive the onFriendAdded() callback, which can be overridden in DefaultCarrierHandler.java for subsequent processing.
+5. Existing friends can't be added repeatedly. You can get the list of friends through the getFriends() function.
 
-## 6 发送消息
+## 6 Sending a message
 
-1. A、B双方 Online 后，对方均会收到 onFriendConnection() 回调，可以在 DefaultCarrierHandler.java 重载此函数进行后续处理。
+1. After both A and B are online, the other party will receive the onFriendConnection() callback, which can be overridden in DefaultCarrierHandler.java for subsequent processing.
     ```java
     public class DefaultCarrierHandler extends AbstractCarrierHandler {
         ......
@@ -121,7 +121,7 @@
         }
     }
     ```
-2. 在A、B双方都处于 Online 状态时，可以通过 sendFriendMessage() 函数向对方发送消息，可参照 CarrierHelper.java 的 sendMessage()。
+2. When both A and B are in the Online state, you can send a message to the other party via the sendFriendMessage() function. You can refer to the SendMessage() of CarrierHelper.java.
     ```java
     public final class CarrierHelper {
         ......
@@ -141,7 +141,7 @@
         }
     }
     ```
-3. 当A发送消息给B后，B会收到 onFriendMessage() 回调，可以在 DefaultCarrierHandler.java 重载此函数进行消息处理。
+3. When A sends a message to B, B receives the onFriendMessage() callback, which can be overridden in DefaultCarrierHandler.java for message processing.
     ```java
     public class DefaultCarrierHandler extends AbstractCarrierHandler {
         ......
@@ -153,10 +153,10 @@
     }
     ```
 
-## 7 建立 Session
+## 7 Create Session
 
-1. Carrier 可以通过 session 建立 P2P 连接。
-2. 首先需要初始化 Session 的 manager， manager 的回调在当有另一方发出连接请求时触发。可参照 CarrierSessionHelper.java 的 initSessionManager() 函数实现。
+1. Carrier can establish a P2P connection through session.
+2. First you need to initialize the manager of the Session. The manager's callback is triggered when another party makes a connection request. This can be done with reference to the initSessionManager() function of CarrierSessionHelper.java.
     ```java
     public final class CarrierSessionHelper {
         ......
@@ -175,12 +175,12 @@
         }
     }
     ```
-3. session 状态可以通过 StreamHandler.onStateChanged() 回调获得，可以在 DefaultSessionHandler.java 重载此函数进行状态处理。
+3. The session state can be obtained through the StreamHandler.onStateChanged() callback. This function can be overridden in DefaultSessionHandler.java for state processing.
 
-4. A创建 session，可参照 CarrierSessionHelper.java 的 newSessionAndStream() 函数实现。
-   * 初始化 SessionManager ，调用 Manager.getInstance(Carrier.getInstance(), sessionHandler) 实现初始化。
-   * Manager.newSession() 函数创建一个 session。
-   * 通过 Session.addStream 函数添加一个 Stream。
+4. A creates session, which can be implemented by referring to the newSessionAndStream() function of CarrierSessionHelper.java.
+   * Initialize SessionManager and call Manager.getInstance(Carrier.getInstance(), sessionHandler) to initialize.
+   * The Manager.newSession() function creates a session.
+   * Add a Stream via the Session.addStream function.
     ```java
     public final class CarrierSessionHelper {
         public static CarrierSessionInfo newSessionAndStream(String peer) {
@@ -212,9 +212,9 @@
         }
     }
     ```
-5. A创建 session 并初始化完成后，调用 Session.request() 函数后，B会收到 Manager 的 onSessionRequest() 回调，在回调中，同样调用 newSessionAndStream() 函数建立B端的 session。
-6. B创建 session 并初始化完成后，调用 Session.replyRequest() ，A会收到 SessionRequestCompleteHandler.onCompletion() 回调。
-7. 当B的 Stream 状态均变成 TransportReady 时，调用 Session.start()。
+5. After creating the session and initializing it, after calling the Session.request() function, B will receive the manager's onSessionRequest() callback. In the callback, the newSessionAndStream() function is also called to establish the B-side session.
+6. After creating the session and initializing it, call Session.replyRequest() and A will receive a SessionRequestCompleteHandler.onCompletion() callback.
+7. When B's Stream state becomes TransportReady, Session.start() is called.
     ```java
     public class MainActivity extends Activity {
         ......
@@ -249,7 +249,7 @@
         }
     }
     ```
-8. A在等待 onCompletion() 后，调用 Session.start()。
+8. A waits for onCompletion() and calls Session.start().
     ```java
     public class CarrierSessionInfo {
         ......
@@ -284,11 +284,11 @@
         }
     }
     ```
-9. 当A、B的 Stream 状态均变成 Connected 时，说明 Session 连接创建成功。
+9. When the Stream status of both A and B become Connected, the Session connection is created successfully.
 
-## 8 通过 Session 发送数据
+## 8 Sending data via Session
 
-1. A、B双方的 Session 均处于 Connected 状态时，可以通过 Stream.writeData() 函数向对方发送数据，可参照 CarrierSessionHelper.java 的 sendData()。
+1. When both Sessions A and B are in the Connected state, you can send data to the other party through the Stream.writeData() function. Refer to sendData() of CarrierSessionHelper.java.
     ```java
     public final class CarrierSessionHelper {
         ......
@@ -307,7 +307,7 @@
         }
     }
     ```
-2. 当A发送数据给B后，B会收到 onStreamData() 回调，可以在 DefaultSessionHandler.java 重载此函数进行数据处理。
+2. When A sends data to B, B will receive the onStreamData() callback, which can be overridden in DefaultSessionHandler.java for data processing.
     ```java
     public class DefaultSessionHandler extends AbstractStreamHandler implements SessionRequestCompleteHandler {
         ......
