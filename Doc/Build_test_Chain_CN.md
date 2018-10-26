@@ -1,25 +1,25 @@
-# Developers build their own test chains
+# 开发者自行搭建测试链
 
-This part contains nodes such as ela, ID, and SideChain.
+该部分包含ela、ID、SideChain等节点。
 
-## 1 Building the Main Chain
+## 1 搭建主链
 
-### 1.1 Prepare the ela node program
+### 1.1 准备ela节点程序
 
-#### 1.1.1 Compile ela node program
+#### 1.1.1 编译ela节点程序
 
-1. Download code <https://github.com/elastos/Elastos.ELA>
-2. Prepare the compilation environment and compile the ela node program
+1. 下载代码<https://github.com/elastos/Elastos.ELA>
+2. 准备编译环境并编译ela节点程序
 
-Set the build environment and compile the node program according to [README](https://github.com/elastos/Elastos.ELA/blob/master/README.md).
+按照[README](https://github.com/elastos/Elastos.ELA/blob/master/README.md)设置编译环境并编译节点程序。
 
-#### 1.1.2 Download release version
+#### 1.1.2 下载release版本
 
-You can get the ubuntu version of the ela program from [Release](https://github.com/elastos/Elastos.ELA/releases).
+从[Release](https://github.com/elastos/Elastos.ELA/releases)可以获得ubuntu版本的ela程序。
 
-### 1.2 Modify config.json
+### 1.2 修改config.json
 
-1. config.json as a template
+1. config.json为模板
 
   ```json
    {
@@ -69,66 +69,66 @@ You can get the ubuntu version of the ela program from [Release](https://github.
   }
   ```
 
-2. According to the operating environment, modify Magic, SeedList, Port, FoundationAddress, etc.
-3. To run the sidechain, after creating the keystore.dat file for the Arbiter node, modify the Arbiters in config.json to the public key corresponding to the Arbiter node and restart the node.
+2. 根据运行环境修改Magic、SeedList、端口及FoundationAddress等
+3. 如需运行侧链，在为Arbiter节点创建keystore.dat文件后，并将config.json中Arbiters修改为对应Arbiter节点的公钥，并重启节点。
 
-### 1.3 Run ela node
+### 1.3 运行ela节点
 
-1. Background start command
+1. 后台启动命令
 
   ```bash
   nohup ./ela 2>output 1>/dev/null &
   ```
 
-2. Front-end start command
+2. 前端启动命令
 
   ```bash
   ./ela
   ```
 
-### 1.4 Normal operation checkpoint
+### 1.4 正常运行检查点
 
-1. The node height grows automatically, which can be judged by periodically checking the node height.
+1. 节点高度自动增长，可通过定期查看节点高度判断
 
   ```bash
   curl http://localhost:10334/api/v1/api/v1/block/height
   ```
 
-2. If you run more than 2 ela nodes, you can view the number of node connections.
+2. 如运行2个以上ela节点，可查看节点连接数
 
   ```bash
   curl http://localhost:10334/api/v1/node/connectioncount
   ```
 
-3. View node status.
+3. 查看节点状态
 
   ```bash
   curl http://localhost:10334/api/v1/node/state
   ```
 
-### 1.5 Ela node interface document
+### 1.5 ela节点接口文档
 
-1. RESTFUL API
+1. RESTFUL接口
 <https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Elastos_Wallet_Node_API_CN.md>
-2. RPC API
+2. RPC接口
 <https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/jsonrpc_apis.md>
 
-## 2 Build a ID Chain
+## 2 搭建ID链
 
-### 2.1 Prepare the IDChain node program
+### 2.1 准备IDChain节点程序
 
-#### 2.1.1 Compile the IDChain node program DID
+#### 2.1.1 编译IDChain节点程序DID
 
-1. Download code <https://github.com/elastos/Elastos.ELA.SideChain>
-2. Prepare the compilation environment and compile the IDChain node program DID
+1. 下载代码<https://github.com/elastos/Elastos.ELA.SideChain>
+2. 准备编译环境并编译IDChain节点程序DID
 
-If the go build environment is not set locally, you can set the build environment by [README@ELA](https://github.com/elastos/Elastos.ELA/blob/master/README.md) and then compile the DID node program according to [README@DID](https://github.com/elastos/Elastos.ELA.SideChain/blob/master/README.md).
+如未本地未设置go编译环境，可以按照[README@ELA](https://github.com/elastos/Elastos.ELA/blob/master/README.md)设置编译环境，然后按照[README@DID](https://github.com/elastos/Elastos.ELA.SideChain/blob/master/README.md)编译DID节点程序。
 
-Set the build environment and compile the node program according to [README](https://github.com/elastos/Elastos.ELA/blob/master/README.md).
+按照[README](https://github.com/elastos/Elastos.ELA/blob/master/README.md)设置编译环境并编译节点程序。
 
-### 2.2 Prepare config.json
+### 2.2 准备config.json
 
-1. SideChain profile template
+1. sidechain配置文件模板
   ```json
   {
     "Configuration": {
@@ -183,57 +183,57 @@ Set the build environment and compile the node program according to [README](htt
   }
   ```
 
-2. According to the environment, modify Magic, SpvMagic, Port, SeedList, MainChainFoundationAddress, FoundationAddress, etc.
+2. 根据环境修改Magic、SpvMagic、端口、SeedList、MainChainFoundationAddress、FoundationAddress等
 
-### 2.3 Node operation
+### 2.3 节点运行
 
-1. Background start command
+1. 后台启动命令
 
   ```bash
   nohup ./did 2>output 1>/dev/null &
   ```
 
-2. Front-end start command
+2. 前端启动命令
 
   ```bash
   ./did
   ```
 
-### 2.4 View node running status
+### 2.4 查看节点运行状态
 
-1. View node height
+1. 查看节点高度
   ```bash
   curl http://localhost:10604/api/v1/api/v1/block/height
   ```
 
-2. View Creation Zone Block Hash
+2. 查看创世区块Hash
   ```bash
   curl http://127.0.0.1:10604/api/v1/block/hash/0
   ```
 
-3. View the number of neighbor nodes
+3. 查看邻居节点数量
   ```bash
   curl http://localhost:10604/api/v1/node/connectioncount
   ```
 
-## 3 Build other side chains
+## 3 搭建其他侧链
 
-### 3.1 Prepare the side chain node program
+### 3.1 准备侧链节点程序
 
-#### 3.1.1 Prepare the node program according to the side chain requirements
+#### 3.1.1 根据侧链需求准备节点程序
 
-#### 3.2 Prepare the side chain config.json
+#### 3.2 准备侧链config.json
 
-Refer to 2.2
+参照 2.2
 
-### 3.3 Start side chain node
+### 3.3 启动侧链节点
 
-1. Get GenesisBlock Hash
+1. 获取GenesisBlock Hash
 
-### 3.4 Modify the arbiter configuration
+### 3.4 修改arbiter配置
 
-1. Add a keystore file for each arbiter, the password is the same as the other arbiter keystore files.
-2. Add a second sidechain information to arbiter's config.json. The content refers to the first information of the SideNodeList. The following is the configuration information of the two sidechains.
+1. 为每个arbiter添加一个keystore文件，密码是与该arbiter其他keystore文件一致
+2. 为arbiter的config.json添加第二条侧链信息，内容参照SideNodeList的第一条信息，下面为配置2条侧链的配置信息，可供参考
   ```json
   {
     "Configuration": {
@@ -301,4 +301,4 @@ Refer to 2.2
   }
   ```
 
-3. Restart arbiter
+3. 重启arbiter

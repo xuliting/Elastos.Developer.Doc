@@ -1,5 +1,5 @@
-1. Download or compile ELastos.ELA.SideChain
-2. Save the configuration information as a config.json file and place it in the same directory as the side file
+1. 下载或编译ELastos.ELA.SideChain
+2. 将配置信息保存为config.json文件，并与side文件放置于同一个目录
 
     ```json
     {
@@ -60,8 +60,8 @@
     }
     ```
 
-3. Start the node program ./side or nohup
+3. 启动节点程序./side或nohup
 
-   ``` shell
+   ```shell
    ./side 2>output 1>/dev/null &
    ```
