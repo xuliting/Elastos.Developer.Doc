@@ -1,22 +1,22 @@
-# java离线签名工具
+# Java offline signature tool
 
-## 一. 获得jar包二种方式
+## 1 There are two ways to get the jar package
 
-### 1. 下载最新版本的jar包
-
-```
-网址：https://github.com/elastos/Elastos.ELA.Utilities.Java/releases
-
-下载：Elastos.ELA.Utilities.Java_v0.1.*.jar
-```
-
-### 2. 下载源代码，编译jar包
+### 1.1 Download the latest version of the jar package
 
 ```
-网址：https://github.com/elastos/Elastos.ELA.Utilities.Java
+URL: https://github.com/elastos/Elastos.ELA.Utilities.Java/releases
+
+Download: Elastos.ELA.Utilities.Java_v0.1.*.jar
 ```
 
-* 编译jar包
+### 1.2 Download the source code, compile the jar package
+
+```
+URL: https://github.com/elastos/Elastos.ELA.Utilities.Java
+```
+
+* Compile the jar package
     ```
     File -> Project Structure -> Artifacts -> + -> JAR -> From modules with
     1、-> Main Class
@@ -25,43 +25,43 @@
     4、ok ->  Include in project build -> Apply ->ok
     ```
 
-* 删除签名jar包依赖，必须使用
+* Delete signature jar package dependencies, must be used
     ```
-    命令： zip -d Elastos.ELA.Utilities.Java 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*SF'
+    Command: zip -d Elastos.ELA.Utilities.Java 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*SF'
     ```
 
-## 二. 启动jar包
+## 2 Start jar package
 
 ```
-建议java版本：1.8
+Recommended java version: 1.8
 
-启动命令：java -cp Elastos.ELA.Utilities.v0.1.*.Java  org.elastos.elaweb.HttpServer
+Start command: java -cp Elastos.ELA.Utilities.v0.1.*.Java  org.elastos.elaweb.HttpServer
 
-web服务默认端口：8989，可修改
+Web service default port: 8989, can be modified
 ```
 
-## 三. 创建交易二种方式（自动获取utxo和手动获取utxo）
+## 3 Two ways to create a transaction (automatically get utxo and manually get utxo)
 
-### 1. 自动获取utxo，也称非离线签名
+### 3.1 Automatically get utxo, also known as non-offline signature
 
-* 特点
+* Feature
 
-  * 构造交易方便，不用计算utxo
-  * 不用计算找零地址金额，拿到从小到大排序的utxo，根据输出(outputs)金额，自动计算找零金额
+  * Convenient trading, no need to calculate utxo
+  * Instead of calculating the amount of the change address, get the utxo sorted from small to large, and automatically calculate the change amount based on the output (outputs) amount.
 
-* 参数说明
+* Parameter Description
 
-  * java程序金额为最小单位1塞拉(1 ela = 100000000 sela(1亿塞拉) )，只能是正整数
-  * `java-config.json` 文件需要放在java程序同级目录，目的是连接节点获取utxo
-  * Host：节点程序所在的服务器ip和rpc端口
-  * Fee：双方规定的交易费，一笔交易的单个输出或多个输出交易费是一样的
-  * Confirmation:区块确认交易的次数，即区块数;建议16个确认数
-  * PrivateKey：输入(inputs)转账需要地址的私钥,java程序内部获取utxo
-  * Outputs：充值地址及金额
-  * ChangeAddress：转账后找零的地址，找零金额java程序自动处理
-  * 输入金额小于输出金额，提示金额不足
+  * The java program amount is the smallest unit of 1 sela (1 ela = 100000000 sela (100 million sela)), can only be a positive integer.
+  * The `java-config.json` file needs to be placed in the same directory of the java program, in order to connect to the node to get utxo.
+  * Host: Server ip and rpc port where the node program is located.
+  * Fee: The transaction fee stipulated by both parties is the same for a single output or multiple output transaction fees for a transaction.
+  * Confirmation: The number of times the block confirms the transaction, that is, the number of blocks; 16 confirmed numbers are recommended.
+  * PrivateKey: Input (transfer) requires the private key of the address, the java program internally obtains utxo.
+  * Outputs: Recharge address and amount
+  * ChangeAddress: Change the address after the transfer, the change amount is automatically processed by the java program
+  * The input amount is less than the output amount, and the prompt amount is insufficient.
 
-* 接口名：genRawTransactionByPrivateKey
+* Interface name：genRawTransactionByPrivateKey
 
   * java-config.json
     ```json
@@ -119,23 +119,23 @@ web服务默认端口：8989，可修改
     }
     ```
 
-### 2. 手动获取utxo,也称离线签名
+### 3.2 Manually get utxo, also known as offline signature
 
-* 特点
-  * 离线签名，保障账户安全
+* Feature
+  * Offline signature to secure your account
 
-* 参数说明
-  * java程序金额为最小单位1塞拉(1 ela = 100000000 sela(1亿塞拉) )，只能是正整数
-  * 需要计算找零地址余额，找零余额=inputs-outputs-fee，将找零地址和余额写在outputs最后一行
-  * txid：地址的可用余额所在的交易,下面接口返回的信息txid写入这里
-  * index：可用余额所在交易中的序号, 下面接口返回的信息vout为index
-  * address：outputs的address为转出地址
-  * privateKey：地址对应的私钥
-  * amount：转出的金额,long类型
+* Parameter Description
+  * The java program amount is the smallest unit of 1 sela (1 ela = 100000000 sela (100 million sela)), can only be a positive integer.
+  * Need to calculate the change address balance, change the balance = inputs-outputs-fee, write the change address and balance in the last line of outputs.
+  * txid: The transaction where the available balance of the address is located, the information returned by the following interface txid is written here.
+  * index: The serial number in the transaction where the balance is available, the information returned by the interface vout is `index`.
+  * address: The address of outputs is the outgoing address.
+  * privateKey: Private key corresponding to the address.
+  * amount: Transferred amount, long type.
 
-* listunspent (通过地址获取utxo接口)
-    ```
-    获取txid、index：
+* listunspent (Get the utxo interface by address)
+   ```
+    Get txid、index:
 
     request
 
@@ -170,7 +170,7 @@ web服务默认端口：8989，可修改
     }
     ```
 
-* 接口名：genRawTransaction
+* Interface name：genRawTransaction
 
   * Request
     ```
@@ -223,15 +223,15 @@ web服务默认端口：8989，可修改
     }
     ```
 
-## 四. 发送交易
+## 4 Send transaction
 
-* 发送交易是节点rpc接口，java不提供发送交易接口
+* The sending transaction is the node rpc interface, java does not provide the sending transaction interface.
 
 * sendrawtransaction
 
   * Request
     ```
-    post请求： http://127.0.0.1:20336 （20336是节点默认端口）
+    Post request: http://127.0.0.1:20336 (20336 is the node default port)
 
     {
         "method":"sendrawtransaction",
@@ -249,9 +249,9 @@ web服务默认端口：8989，可修改
     }
     ```
 
-## 五. web rpc 接口
+## 5 web rpc interface
 
-### decodeRawTransaction（反解析rawTransaction）
+### 5.1 decodeRawTransaction（Anti-parse rawTransaction）
 
 * Request
     ```
@@ -287,7 +287,7 @@ web服务默认端口：8989，可修改
     }
     ```
 
-### genPrivateKey（生成私钥）
+### 5.2 genPrivateKey（Generate private key）
 
 * Request
     ```
@@ -309,7 +309,7 @@ web服务默认端口：8989，可修改
     }
     ```
 
-### genPublicKey（生成公钥）
+### 5.3 genPublicKey（Generate public key）
 
 * Request
     ```
@@ -333,7 +333,7 @@ web服务默认端口：8989，可修改
     }
     ```
 
-### genAddress（生成地址）
+### 5.4 genAddress（Generate address）
 
 * Request
     ```
@@ -357,7 +357,7 @@ web服务默认端口：8989，可修改
     }
     ```
 
-### gen_priv_pub_addr（生成私钥、公钥、地址）
+### 5.5 gen_priv_pub_addr（Generate private key, public key, address）
 
 * Request
     ```
@@ -383,11 +383,11 @@ web服务默认端口：8989，可修改
     }
     ```
 
-### checkAddress (检查地址)
+### 5.6 checkAddress (Check address)
 
 * Request
     ```
-    检查地址支持map格式和数组格式
+    Check address support map format and array format
 
     {
         "method":"checkAddress",
