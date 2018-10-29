@@ -20,11 +20,16 @@ Side Chain : <https://github.com/elastos/Elastos.ELA.SideChain>
 
 ### 1.3 Build a development environment
 
+Elastos has prepared the relevant environment for the hacker to use, please hacker to view the following documents：
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/ela-aws-ami.md>
+
+If you want to build your own environment, please continue.
+
 #### 1.3.1 Build a node, link the test environment
 
 * Main Chain
   * Build the Main Chain:
-    <https://github.com/elastos/Elastos.ELA/blob/master/README.md> 
+    <https://github.com/elastos/Elastos.ELA/blob/master/README.md>
   * Connect to testnet:
     <https://github.com/elastos/Elastos/wiki/Connect-to-testnet>
 
@@ -53,7 +58,7 @@ Trading on the Main Chain can be divided into two ways:
 * Create a transaction using Utilities.Java
 
   <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Java_offline_signature.md>
-  
+
 * Create a transaction using ela-cli
 
   <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-cli_Client_usage_MainChain.md>
