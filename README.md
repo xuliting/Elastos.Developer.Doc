@@ -139,8 +139,8 @@ The main interface in DID are as follows. For the specific interface methods, re
 
 * REST API
 
-  * [REST API](https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Elastos_Wallet_Node_API.md)
-  * [REST API_CN](https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Elastos_Wallet_Node_API_CN.md)
+  * [REST API](https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Restful_API.md)
+  * [REST API_CN](https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Restful_API_CN.md)
 
 * JSON RPC API
 
