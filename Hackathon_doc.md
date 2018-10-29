@@ -5,14 +5,17 @@
 ### 1.1 code
 
 Main Chain : <https://github.com/elastos/Elastos.ELA>
+
 Side Chain : <https://github.com/elastos/Elastos.ELA.SideChain>
 
 ### 1.2 API
 
 * REST API
+
   <https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Restful_API.md>
 
 * JSON RPC API
+
   <https://github.com/elastos/Elastos.ELA/blob/master/docs/jsonrpc_apis.md>
 
 ### 1.3 Build a development environment
@@ -20,15 +23,16 @@ Side Chain : <https://github.com/elastos/Elastos.ELA.SideChain>
 #### 1.3.1 Build a node, link the test environment
 
 * Main Chain
-  * Build the Main Chain: <https://github.com/elastos/Elastos.ELA/blob/master/README.md>
+  * Build the Main Chain:
+    <https://github.com/elastos/Elastos.ELA/blob/master/README.md> 
   * Connect to testnet:
-  <https://github.com/elastos/Elastos/wiki/Connect-to-testnet>
+    <https://github.com/elastos/Elastos/wiki/Connect-to-testnet>
 
 * ID Chain
   * Build the ID Chain:
-  <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ELA_SideChain_deploy.md>
+    <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ELA_SideChain_deploy.md>
   * Connect to the DID of testnet:
-  <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Connect_to_SideChain_of_testnet.md>
+    <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Connect_to_SideChain_of_testnet.md>
 
 #### 1.3.2 Developers build their own test chains
 
@@ -47,8 +51,11 @@ Building test chains can be divided into three types:
 Trading on the Main Chain can be divided into two ways:
 
 * Create a transaction using Utilities.Java
+
   <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Java_offline_signature.md>
+  
 * Create a transaction using ela-cli
+
   <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-cli_Client_usage_MainChain.md>
 
 #### 1.4.2 Create a transaction on the Side Chain
