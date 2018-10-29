@@ -21,7 +21,7 @@ Side Chain : <https://github.com/elastos/Elastos.ELA.SideChain>
 ### 1.3 Build a development environment
 
 Elastos has prepared the relevant environment for the hacker to use, please hacker to view the following documents：
-<https://github.com/elastos/Elastos.Developer.Doc/blob/master/ela-aws-ami.md>
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-aws-ami.md>
 
 If you want to build your own environment, please continue.
 
