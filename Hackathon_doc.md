@@ -144,7 +144,7 @@ Refer to the last part of the documentation below to export the latest API docum
 
 ### 3.3 FAQ
 
-<https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/wiki/How-to-use-Carrier-API>
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/How_to_use_Carrier_API_FAQ.md>
 
 ## 4 Relevant information
 
