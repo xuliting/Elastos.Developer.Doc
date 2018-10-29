@@ -47,7 +47,7 @@ $ ./did > /dev/null &
 > Start the SideChain node. After startup, the `Chain Logs SPVLogs data_store.bin headers.bin queue.db` file will be generated in the current directory. If there are a data synchronization error and the node height does not increase. Please delete these files and restart the application.
 > After starting the SideChain node, the server will open `TCP 21603 21604 21605 21606 21608` ports, please open these application ports in `AWS` firewall.
 
-* After the MainChain and SideChain nodes are started, they wait for the node to synchronize data from the seed node. During the period, the data synchronization can be viewed using the `/api/v1/block/height` interface.
+* After the MainChain and SideChain nodes are started, they wait for the node to synchronize data from the seed node. During the period, the data synchronization can be viewed using the `/api/v1/block/height` interface.
 
 2.2 Start the service with the `docker` image we created
 
