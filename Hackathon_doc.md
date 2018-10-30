@@ -20,12 +20,16 @@ Side Chain : <https://github.com/elastos/Elastos.ELA.SideChain>
 
 ### 1.3 Build a development environment
 
+The hackathon marathon is recommended to use 1.3.1.
+
+1.3.2 and 1.3.3 are advanced levels.
+
+#### 1.3.1 Direct, AWS, docker
+
 Elastos has prepared the relevant environment for the hacker to use, please hacker to view the following documents：
 <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-aws-ami.md>
 
-If you want to build your own environment, please continue.
-
-#### 1.3.1 Build a node, link the test environment
+#### 1.3.2 Build a node, link the test environment
 
 * Main Chain
   * Build the Main Chain:
@@ -39,7 +43,7 @@ If you want to build your own environment, please continue.
   * Connect to the DID of testnet:
     <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Connect_to_SideChain_of_testnet.md>
 
-#### 1.3.2 Developers build their own test chains
+#### 1.3.3 Developers build their own test chains
 
 Building test chains can be divided into three types:
 
