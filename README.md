@@ -12,6 +12,11 @@ After the above workload is accepted, we will send you a number of ELA as a rewa
 
 In order to avoid omissions, contributors are requested to send an email to Dev-support@elastos.org. Thank you very much for your participation and contribution.
 
+The award assessment rules for the contribution of community members can be found in the following documents:
+
+* [EN](Doc/Contribution_Award_Assessment.md)
+* [CN](Doc/Contribution_Award_Assessment_CN.md)
+
 ## 1. CAR programming
 
 ### 1.1. How to write a CAR component
