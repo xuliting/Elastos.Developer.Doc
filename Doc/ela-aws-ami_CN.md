@@ -45,15 +45,15 @@ $ ./did > /dev/null &
 > 启动侧链节点，启动之后会在当前目录下生成 Chain Logs SPVLogs data_store.bin headers.bin queue.db文件；如果出现数据同步错误，节点高度不增加问题，请删除这些文件之后重新启动应用
 > 启动侧链节点之后，服务器会打开 TCP 21603 21604 21605 21606 21608端口，请在 AWS 防火墙打开这些应用端口
 
-* 主链和侧链节点启动后等待节点从种子节点同步数据，期间可以使用 `/api/v1/block/height`接口查看数据同步情况
+* 主链和侧链节点启动后等待节点从种子节点同步数据，期间可以使用 `/api/v1/block/height`接口查看数据同步情况
 
 2.2 使用我们创建的 `docker` 镜像启动服务
 
-* 先在目标服务器准备好 `docker` 运行环境
+* 先在目标服务器准备好 `docker` 运行环境
 
-* `docker` 镜像可以从[这里](https://s3-ap-northeast-1.amazonaws.com/elastos-docker-img/ela_node_hackson.docker.img.zip)下载，然后导入本地镜像库
+* `docker` 镜像可以从[这里](https://s3-ap-northeast-1.amazonaws.com/elastos-docker-img/ela_node_hackson.docker.img.zip)下载，然后导入本地镜像库
 
-* 使用如下命令启动一个 `container`：
+* 使用如下命令启动一个 `container`：
 
     ```bash
     docker run -d -p 21334:21334 -p 21335:21335 -p 21336:21336 -p 21338:21338 -p 21604:21604 -p 21605:21605 -p 21606:21606 -p 21608:21608 ela-node-did
