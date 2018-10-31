@@ -73,11 +73,11 @@ By default, the API document is provided, which also contains the API of the CAR
 
 Open the document, go to the html directory, find index.html and click it to open the API document in the browser.
 
-[Elastos_SDK_API](SDK/Elastos_SDK_API.zip)
+* [Elastos_SDK_API](SDK/Elastos_SDK_API.zip)
 
 Refer to the last part of the documentation below to export the latest API documentation:
 
-[How_to_Export_API](https://github.com/elastos/Elastos.RT/blob/master/Docs/DocTools/How_to_Export_API.md)
+* [How_to_Export_API](https://github.com/elastos/Elastos.RT/blob/master/Docs/DocTools/How_to_Export_API.md)
 
 ## 2. CAR SDK
 
@@ -130,13 +130,25 @@ The main interface in DID are as follows. For the specific interface methods, re
 * IDIDChecker
 * IDIDInspector
 
-### 2.4. Wallet Service
+### 2.4. Wallet service related information
 
-* Built-in use case for offline wallet Java version
+#### 2.4.1 DID
 
-  * [Elastos.ORG.Wallet.Service Code](https://github.com/elastos/Elastos.ORG.Wallet.Service.git)
+* [Code](https://github.com/elastos/Elastos.ORG.DID.Service.git)
 
-  * [Elastos.ORG.Wallet.Service documentation](https://walletservice.readthedocs.io)
+* [API & doc](https://didservice.readthedocs.io/en/latest/)
+
+#### 2.4.2 ela related
+
+* [Code](https://github.com/elastos/Elastos.ORG.Wallet.Service)
+
+* [API & doc](https://walletservice.readthedocs.io/en/latest/)
+
+#### 2.4.3 Signature transaction related
+
+* [Code](https://github.com/elastos/Elastos.ORG.Wallet.Lib.C.git)
+
+* [API & doc](https://elastoswalletlibc.readthedocs.io/en/latest/)
 
 ## 3. ELA Blockchain
 
@@ -157,7 +169,14 @@ Document not yet available.
 
 ### 3.3. Deploy ELA nodes
 
-#### 3.3.1 Build a node and connect to the test environment
+#### 3.3.1 Direct, AWS, docker
+
+Elastos has prepared the relevant environment to use, please view the following documents：
+
+* [EN](https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-aws-ami.md)
+* [CN](https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-aws-ami_CN.md)
+
+#### 3.3.2 Build a node and connect to the test environment
 
 * Build a node of MainChain and connect to the test environment
 
@@ -167,11 +186,15 @@ Document not yet available.
 
 * Build a node of IDChain and connection test environment
 
-  * [SideChain_deploy](Doc/ELA_SideChain_deploy.md)
+  * SideChain_deploy
+    * [EN](Doc/ELA_SideChain_deploy.md)
+    * [CN](Doc/ELA_SideChain_deploy_CN.md)
 
-  * [Connect to the SideChain of testnet](Doc/Connect_to_SideChain_of_testnet.md)
+  * Connect to the SideChain of testnet
+    * [EN](Doc/Connect_to_SideChain_of_testnet.md)
+    * [CN](Doc/Connect_to_SideChain_of_testnet_CN.md)
 
-#### 3.3.2 Building a test chain
+#### 3.3.3 Building a test chain
 
 Building test chains can be divided into three types:
 
@@ -183,29 +206,51 @@ Building test chains can be divided into three types:
 
 Specific steps can refer to the following document content:
 
-* [Build_test_Chain](Doc/Build_test_Chain.md)
+* [Build_test_Chain_EN](Doc/Build_test_Chain.md)
+* [Build_test_Chain_CN](Doc/Build_test_Chain_CN.md)
 
 ### 3.4. Create a transaction
 
 #### 3.4.1. Create a transaction on the MainChain
 
 * Create a transaction using Utilities.Java
+  * [Java_offline_signature](Doc/Java_offline_signature.md)
   * [Java_offline_signature_CN](Doc/Java_offline_signature_CN.md)
 
 * Create a transaction using ela-cli
 
   * [ela-cli_Client_usage_MainChain](Doc/ela-cli_Client_usage_MainChain.md)
+  * [ela-cli_Client_usage_MainChain_CN](Doc/ela-cli_Client_usage_MainChain_CN.md)
 
 #### 3.4.2. Create a transaction on the SideChain
 
 * Create a transaction using ela-cli
   * [ela-cli_Client_usage_SideChain](Doc/ela-cli_Client_usage_SideChain.md)
+  * [ela-cli_Client_usage_SideChain_CN](Doc/ela-cli_Client_usage_SideChain_CN.md)
+
+#### 3.4.3 How to get the test coin
+
+In order to facilitate the development and testing of the Elastos test chain by community developers, the Elastos Foundation also provides a faucet tool for issuing test coins. After filling in some information, you can get 10 ELA test coins on the test network.
+
+Test network wallet address:
+<https://wallet-beta.elastos.org/>
+
+Test network browser address:
+<https://blockchain-beta.elastos.org/>
+
+Test coin tap address:
+<https://faucet.elastos.org/>
+
+Application method:
+Go to <https://faucet.elastos.org/> and submit the application form.
+Note: The ELA address should be the address of the registered wallet at <https://wallet-beta.elastos.org/>.
 
 ### 3.5. Integrate exchange
 
 * Java offline signature
 
-  * [Link_CN](Doc/Java_offline_signature_CN.md)
+  * [EN](Doc/Java_offline_signature.md)
+  * [CN](Doc/Java_offline_signature_CN.md)
 
   * [PDF_CN](Doc/Java_offline_signature_CN.pdf)
 
@@ -271,28 +316,31 @@ The API is provided by default.
 
 Open the document, go to the html directory, find index.html and click it to open the API document in the browser.
 
-[Carrier_API](SDK/Elastos.NET.Carrier.Native.SDK_API.zip)
+* [Carrier_API](SDK/Elastos.NET.Carrier.Native.SDK_API.zip)
 
 Refer to the last part of the documentation below to export the latest API documentation:
 
-[How to build API documentation](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/blob/master/README.md#Build_API_documentation)
+* [How to build API documentation](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/blob/master/README.md#Build_API_documentation)
 
 #### Android
 
-[Code](https://github.com/elastos/Elastos.NET.Carrier.Android.SDK)
+* [Code](https://github.com/elastos/Elastos.NET.Carrier.Android.SDK)
 
-[API](https://github.com/elastos/Elastos.NET.Carrier.Android.SDK#build-docs)
+* [API](https://github.com/elastos/Elastos.NET.Carrier.Android.SDK#build-docs)
 
 #### JS
 
-[Code](https://github.com/elastos/Elastos.NET.Carrier.Nodejs.SDK)
+* [Code](https://github.com/elastos/Elastos.NET.Carrier.Nodejs.SDK)
 
 ### 5.2. Sample
 
 demo： <https://github.com/elastos/Elastos.Developer.Doc/tree/master/Demo/android>
 
-doc：[Carrier_For_Android_CN](Doc/Carrier_For_Android_CN.md)
+* doc
+  * [EN](Doc/Carrier_For_Android.md)
+  * [CN](Doc/Carrier_For_Android_CN.md)
 
 ### 5.3. FAQ
 
-* [FAQ](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/wiki/How-to-use-Carrier-API)
+* [EN](Doc/How_to_use_Carrier_API_FAQ.md)
+* [CN](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/wiki/How-to-use-Carrier-API)
