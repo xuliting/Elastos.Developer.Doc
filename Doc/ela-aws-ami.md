@@ -21,7 +21,7 @@ In addition, you can use two ways to start a main chain and side chain nodes. Th
 
 This document assumes that you are at least familiar with the `AWS EC2` administrative backend or `Docker` basic operations.
 
-2.1 Start an instance of our `Elastos` main chain and sidechain nodes using our custom `AWS AMI`
+### 2.1 Start an instance of our `Elastos` main chain and sidechain nodes using our custom `AWS AMI`
 
 * Select `Launch Instance` in the `AWS EC2 Dashbord` control panel
 
@@ -49,7 +49,7 @@ $ ./did > /dev/null &
 
 * After the MainChain and SideChain nodes are started, they wait for the node to synchronize data from the seed node. During the period, the data synchronization can be viewed using the `/api/v1/block/height` interface.
 
-2.2 Start the service with the `docker` image we created
+### 2.2 Start the service with the `docker` image we created
 
 * Prepare the `docker` runtime environment on the target server first.
 
