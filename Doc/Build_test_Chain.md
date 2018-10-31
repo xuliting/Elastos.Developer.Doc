@@ -229,7 +229,7 @@ You can get the ubuntu version of the ela program from [Release](https://github.
 
 #### 3.1.1 Prepare the node program according to the side chain requirements
 
-#### 3.2 Prepare the side chain config.json
+### 3.2 Prepare the side chain config.json
 
 Refer to 2.2
 
