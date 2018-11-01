@@ -15,6 +15,13 @@ $ curl http://54.64.220.165:21334/api/v1/block/height    //获取主链节点高
 $ curl http://54.64.220.165:21604/api/v1/block/height    //获取侧链节点高度
 ```
 
+wallet.Service 和 did.Service 的服务部署：
+
+```
+18.179.20.67:8080  // 这是 did.Service
+18.179.207.38:8080   // 这是 wallet.Service
+```
+
 ## 2 启动节点，连接测试环境
 
 另外您还可以使用如下两种方式来启动一个主链和侧链节点，节点已经默认配置连接`testnet`环境同步数据；本文档假设您至少熟悉 `AWS EC2` 管理后台或者 `Docker` 基本操作。
