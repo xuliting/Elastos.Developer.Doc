@@ -15,6 +15,13 @@ $ curl http://54.64.220.165:21334/api/v1/block/height    //Get the height of the
 $ curl http://54.64.220.165:21604/api/v1/block/height    //Get the height of the SideChain node
 ```
 
+Service deployment for wallet.Service and did.Service：
+
+```
+18.179.20.67:8080  // this is did.Service
+18.179.207.38:8080   // this is wallet.Service
+```
+
 ## 2 Start the node and connect to the test environment
 
 In addition, you can use two ways to start a main chain and side chain nodes. The node has been configured to connect to the `testnet` environment synchronization data by default.
