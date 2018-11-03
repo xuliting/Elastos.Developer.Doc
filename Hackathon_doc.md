@@ -118,7 +118,7 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 18.179.207.38:8080
 
-### 2.3 Signature transaction related
+### 2.3 Signing transaction related
 
 #### 2.3.1 Code
 
