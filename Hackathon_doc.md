@@ -100,6 +100,10 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 <https://didservice.readthedocs.io/en/latest/>
 
+#### 2.1.3 Server
+
+18.179.20.67:8080  
+
 ### 2.2 ela related
 
 #### 2.2.1 Code
@@ -109,6 +113,10 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 #### 2.2.2 API & doc
 
 <https://walletservice.readthedocs.io/en/latest/>
+
+#### 2.2.3 Server 
+
+18.179.207.38:8080
 
 ### 2.3 Signature transaction related
 
