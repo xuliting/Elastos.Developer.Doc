@@ -92,7 +92,7 @@
 1. 节点高度自动增长，可通过定期查看节点高度判断
 
     ```bash
-    curl http://localhost:10334/api/v1/api/v1/block/height
+    curl http://localhost:10334/api/v1/block/height
     ```
 
 2. 如运行2个以上 ela 节点，可查看节点连接数
