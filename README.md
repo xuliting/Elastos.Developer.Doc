@@ -154,11 +154,6 @@ The main interface in DID are as follows. For the specific interface methods, re
 
 ### 3.1. Node API
 
-* REST API
-
-  * [REST API](https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Restful_API.md)
-  * [REST API_CN](https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Restful_API_CN.md)
-
 * JSON RPC API
 
   * [JSON_RPC_API](https://github.com/elastos/Elastos.ELA/blob/master/docs/jsonrpc_apis.md)
