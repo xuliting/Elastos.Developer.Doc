@@ -10,10 +10,6 @@ Side Chain : <https://github.com/elastos/Elastos.ELA.SideChain>
 
 ### 1.2 API
 
-* REST API
-
-  <https://github.com/elastos/Elastos.ELA/blob/release_v0.2.1/docs/Restful_API.md>
-
 * JSON RPC API
 
   <https://github.com/elastos/Elastos.ELA/blob/master/docs/jsonrpc_apis.md>
