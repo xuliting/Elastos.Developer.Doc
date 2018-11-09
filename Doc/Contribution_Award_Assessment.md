@@ -24,19 +24,15 @@
 
 ## 3. Contribution information collection
 
-* Collection time
-  * once a week
-* Collector
-  * WeChat public number
-    * Collection of public account holders.
-  * send email
-    * Email person in charge collection.
-  * Github
-    * Collected by each warehouse owner or related person.
-* Collect content
-  * username
-  * Contribution details. If there is a link to write a link.
-* Contributors can also actively collect their own contribution information and send it to Dev-support@elastos.org for evaluation.
+* WeChat public number
+  * Collection of public account holders.
+    * username, contribution details
+* send email
+  * Email person in charge collection.
+    * username, contribution details
+* Github
+  * Contributors are welcome to actively collect their contribution information and send it to Dev-support@elastos.org for evaluation.
+    * username, contribution details, if there is a link to write a link.
 
 ## 4. Contribution evaluation
 
