@@ -7,9 +7,9 @@
    - Win 7 or above
 ``` 
 ### Tools/Software
-    * Docker
-    * AWS
-    * [Atom Editor](https://atom.io/ "Atom Editor")
+     Docker
+     AWS
+    [Atom Editor](https://atom.io/)
     
 ### Programing language
     - C++, JS
