@@ -7,6 +7,6 @@
 ### Tools/Software
     - Docker
     - AWS
-    - [Atom Editor](https://atom.io/)
+    - [Atom Editor](https://atom.io/ "Atom Editor")
 ### Programing language
     - C++, JS
