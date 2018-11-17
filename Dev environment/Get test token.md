@@ -3,7 +3,13 @@ In order to facilitate the development and testing of the Elastos test chain by 
 
 ```
 Test network wallet address: https://wallet-beta.elastos.org/
+
 Test network browser address: https://blockchain-beta.elastos.org/
+
 Test coin tap address: https://faucet.elastos.org/
-**Application method: Go to https://faucet.elastos.org/ and submit the application form. Note: The ELA address should be the address of the registered wallet at https://wallet-beta.elastos.org/.**
+
+**Application steps: 
+- Go to https://faucet.elastos.org/
+- Submit the application form (Github email is key). 
+\*Note: The ELA address should be the address of the registered wallet at https://wallet-beta.elastos.org/.**
 ```
