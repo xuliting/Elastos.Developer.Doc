@@ -1,4 +1,4 @@
-# DApp Creation, packaging, and installation
+# dApp Creation, packaging, and installation
 ##   Table of Contents
 
 1. Introduction to Trinity
