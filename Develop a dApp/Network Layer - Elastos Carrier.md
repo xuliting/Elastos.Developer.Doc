@@ -1,4 +1,4 @@
-# Network layer - Elastos Carrier
+# Network Layer - Elastos Carrier
 Elastos Carrier solves the problem that the app nodes on the Internet have no public network ip and cannot be directly connected. Usually solving this problem requires deploying a central server for data transfer.
 Also, Elastos Carrier implements a centerless direct connection communication scheme based on P2P communication technology.
 
