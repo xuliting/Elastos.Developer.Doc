@@ -1,4 +1,4 @@
-# Create a transaction
+# Initialize a transaction
 
 ## Create a transaction on the MainChain
 
