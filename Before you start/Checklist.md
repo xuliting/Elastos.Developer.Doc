@@ -8,9 +8,12 @@
 ``` 
 
 ### Tools/Software
-   - Docker
-   - AWS
-   - [Atom](https://atom.io)
-    
+``` 
+   - [Docker](https://www.docker.com/)
+   - [AWS](https://aws.amazon.com/)
+   - [Atom](https://atom.io/)
+```     
 ### Programing language
+``` 
     - C++, JS
+``` 
