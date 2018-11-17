@@ -2,7 +2,7 @@
 
 ## Create a transaction on the MainChain
 
-#### Create a transaction using Utilities.Java
+#### 1st Create a transaction using Utilities.Java
 
 > # Java offline signature tool
 
@@ -16,7 +16,7 @@ URL: https://github.com/elastos/Elastos.ELA.Utilities.Java/releases
 Download: Elastos.ELA.Utilities.Java_v0.1.*.jar
 ```
 
-### 1.2 Download the source code, compile the jar package
+> ### 1.2 Download the source code, compile the jar package
 
 ```
 URL: https://github.com/elastos/Elastos.ELA.Utilities.Java
@@ -36,7 +36,7 @@ URL: https://github.com/elastos/Elastos.ELA.Utilities.Java
     Command: zip -d Elastos.ELA.Utilities.Java 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*SF'
     ```
 
-### 1.3 Start jar package
+> ### 1.3 Start jar package
 
 ```
 Recommended java version: 1.8
@@ -46,11 +46,11 @@ Start command: java -cp Elastos.ELA.Utilities.v0.1.*.Java  org.elastos.elaweb.Ht
 Web service default port: 8989, can be modified
 ```
 
-## 2 MainChain - MainChain transfer
+> ## 2 MainChain - MainChain transfer
 
-### 2.1 Single sign to create a transaction two ways (automatically get utxo and manually get utxo)
+> ### 2.1 Single sign to create a transaction two ways (automatically get utxo and manually get utxo)
 
-#### 2.1.1 Automatically get utxo, also known as non-offline signature
+> #### 2.1.1 Automatically get utxo, also known as non-offline signature
 
 * Feature
 
@@ -127,7 +127,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-### 2.1.2 Manually get utxo, also known as offline signature
+> ### 2.1.2 Manually get utxo, also known as offline signature
 
 * Feature
   * Offline signature to secure your account
@@ -232,11 +232,11 @@ Web service default port: 8989, can be modified
     }
     ```
 
-## 3. MainChain - SideChain transfer
+> ## 3. MainChain - SideChain transfer
 
-### 3.1 Single sign to create a transaction two ways (automatically get utxo and manually get utxo)
+> ### 3.1 Single sign to create a transaction two ways (automatically get utxo and manually get utxo)
 
-#### 3.1.1 Automatically get utxo, also known as non-offline signature
+> #### 3.1.1 Automatically get utxo, also known as non-offline signature
 
 * Feature
 
@@ -317,7 +317,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-### 3.1.2 Manually get utxo, also known as offline signature
+> ### 3.1.2 Manually get utxo, also known as offline signature
 
 * Feature
   * Offline signature to secure your account
@@ -392,7 +392,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-## 4 Send transaction
+> ## 4 Send transaction
 
 * The sending transaction is the node `rpc` interface, java does not provide the sending transaction interface.
 
@@ -418,9 +418,9 @@ Web service default port: 8989, can be modified
     }
     ```
 
-## 5 web rpc interface
+> ## 5 web rpc interface
 
-### 5.1 decodeRawTransaction（Anti-parse rawTransaction）
+> ### 5.1 decodeRawTransaction（Anti-parse rawTransaction）
 
 * Request
     ```
@@ -456,7 +456,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-### 5.2 genPrivateKey（Generate private key）
+> ### 5.2 genPrivateKey（Generate private key）
 
 * Request
     ```
@@ -478,7 +478,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-### 5.3 genPublicKey（Generate public key）
+> ### 5.3 genPublicKey（Generate public key）
 
 * Request
     ```
@@ -502,7 +502,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-### 5.4 genAddress（Generate address）
+> ### 5.4 genAddress（Generate address）
 
 * Request
     ```
@@ -526,7 +526,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-### 5.5 gen_priv_pub_addr（Generate private key, public key, address）
+> ### 5.5 gen_priv_pub_addr（Generate private key, public key, address）
 
 * Request
     ```
@@ -552,7 +552,7 @@ Web service default port: 8989, can be modified
     }
     ```
 
-### 5.6 checkAddress (Check address)
+> ### 5.6 checkAddress (Check address)
 
 * Request
     ```
@@ -610,7 +610,7 @@ Web service default port: 8989, can be modified
 >
 
 
-### 5.7 genGenesisAddress (creation block hash generation x address)
+> ### 5.7 genGenesisAddress (creation block hash generation x address)
 
 * Request
     ```
@@ -639,7 +639,472 @@ Web service default port: 8989, can be modified
   * [ela-cli_Client_usage_MainChain](Doc/ela-cli_Client_usage_MainChain.md)
 
 
-#### 3.4.2. Create a transaction on the SideChain
+## Create a transaction on the SideChain
 
-* Create a transaction using ela-cli
-  * [ela-cli_Client_usage_SideChain](Doc/ela-cli_Client_usage_SideChain.md)
+#### 2nd Create a transaction using ela-cli
+# cli Client Transfer - Sidechain Trading
+
+> ## 1 MainChain - SideChain transfer
+
+> ### 1.1 Compile the cli client program
+
+1. Download code: <https://github.com/elastos/Elastos.ELA.Client>
+2. Make compile cli node program
+
+> ### 1.2 Prepare cli-config.json
+
+1. Host: Connect `RPC` node to get utxo and send transactions.
+2. DepositAddress: Recharge the side chain according to the address backbone or the SideChain to the MainChain.
+3. Recharge: DepositAddress configures the starting address of the X generated by the SideChain creation block hash, used to recharge the SideChain for the MainChain.
+4. Extract coins: DepositAddress configures "0000000000000000000000000000000000" to the MainChain to trade transactions
+
+- The DepositAddress of the cli-config file is configured as the X initial address generated by the sidechain creation block hash.
+
+```json
+{
+    "Host": "127.0.0.1:11336",
+    "DepositAddress":"XEmfgnrDLQmFPBJiWvsyYGV2jzLQY58J6G"
+}
+```
+
+> ### 1.3 Creating a wallet
+
+1. Generate the keystore.dat file and the wallet.db file
+2. keystore.dat: the file after encrypting the private key
+3. wallet.db: UTXO for storage address
+
+```shell
+$ ./ela-cli wallet -c
+```
+
+```shell
+ADDRESS                            PUBLIC KEY
+---------------------------------- ------------------------------------------------------------------
+ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 02fab9d047f59ecbc49309de83e4b3ef58bc0b53fa8b9eab5ff1ab09fbb28b4b65
+---------------------------------- ------------------------------------------------------------------
+```
+
+> ### 1.4 Displaying account balances
+
+```shell
+$ ./ela-cli wallet -l
+```
+
+```shell
+INDEX                            ADDRESS BALANCE                           (LOCKED)   TYPE
+----- ---------------------------------- ------------------------------------------ ------
+    1 ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 2.92998500                    (2.92998500) MASTER
+----- ---------------------------------- ------------------------------------------ ------
+```
+
+> ### 1.5 Single Signature Transfer
+
+> #### 1.5.1 Creating a transaction generation
+
+1. from: cost address
+2. to: arrival address
+3. amount: transfer amount
+4. fee: transaction fee
+
+```shell
+$ ./ela-cli wallet -t create --from ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 --to EXYPqZpQQk4muDrdXoRNJhCpoQtFBQetYg --amount 100 --fee 0.00001
+
+Generate: to_be_signed.txn file
+```
+
+> #### 1.5.2 Signature transaction
+
+```shell
+$ ./ela-cli wallet -t sign --file  to_be_signed.txn
+
+Generate: ready_to_send.txn file
+```
+
+> #### 1.5.3 Send transaction
+
+```shell
+$ ./ela-cli wallet -t send --file  ready_to_send.txn
+
+Generate txid: 94d4b62bc91532dc357ee411394540f301efb723d5356e4864abcc7e42a717ec
+```
+
+> ### 1.6 Multi-signal transfer
+
+> #### 1.6.1 Create a multi-signal address
+
+1. A public key corresponding to three or more addresses is required to create a multi-signal address. The default number of signatures is: M=N/2+1, M is the number of signatures, and N is the number of public keys.
+2. The created multi-signal address is the beginning of 8, and the multi-signal address transfer requires M private keys for signature.
+
+```shell
+$ ./ela-cli wallet --addaccount 03AFFC115E36CEFBC32081D57E1373781266989A40B7B70714DC118C7A5E6FD713,02F3A141103E46164263C7F4695F273F00E253388F5C56A3D61CAC995F7D556542,024E232C5201824526246336DF9CA6BC33ADF9726464FF4BF6164EC2F90116EEF6,02EE4469ED7948630F709E90F6B2519CA57FA0C2141EE8C9BA1F811171EEE20F52
+```
+
+```shell
+INDEX                            ADDRESS BALANCE                           (LOCKED)   TYPE
+----- ---------------------------------- ------------------------------------------ ------
+    1 ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 0                             (5.85997000) MASTER
+----- ---------------------------------- ------------------------------------------ ------
+    2 8YaHDqipzMEqGyqCgPSBQxVdWwLyhWJrSp 0                                      (0)  MULTI
+----- ---------------------------------- ------------------------------------------ ------
+```
+
+> #### 1.6.2 Creating a transaction generation
+
+```shell
+$ ./ela-cli wallet -t create --from 8YaHDqipzMEqGyqCgPSBQxVdWwLyhWJrSp --to EXYPqZpQQk4muDrdXoRNJhCpoQtFBQetYg --amount 100 --fee 0.00001
+
+Generate: to_be_signed.txn file
+```
+
+> #### 1.6.3 Signature transaction
+
+```shell
+Signature M times
+
+$ ./ela-cli wallet -t sign --file  to_be_signed.txn
+
+Generate: to_be_signed_1_of_3.txn file
+
+
+$ ./ela-cli wallet -t sign --file  to_be_signed_1_of_3.txn
+
+Generate: to_be_signed_2_of_3.txn file
+
+
+$ ./ela-cli wallet -t sign --file  to_be_signed_2_of_3.txn
+
+Generate: ready_to_send.txn  file
+```
+
+> #### 1.6.4 Send transaction
+
+```shell
+$ ./ela-cli wallet -t send --file  ready_to_send.txn
+
+Generate txid: 94d4b62bc91532dc357ee411394540f301efb723d5356e4864abcc7e42a717ec
+```
+
+> ## 2 SideChain - MainChain transfer
+
+> ### 2.1 Compile the cli client program
+
+1. Download code: <https://github.com/elastos/Elastos.ELA.Client>
+2. Make compile cli node program
+
+> ### 2.2 Prepare cli-config.json
+
+1. Host: Connect `RPC` node to get utxo and send transactions.
+2. DepositAddress: Recharge the side chain according to the address backbone or the SideChain to the MainChain.
+3. Recharge: DepositAddress configures the starting address of the X generated by the SideChain creation block hash, used to recharge the SideChain for the MainChain.
+4. Extract coins: DepositAddress configures "0000000000000000000000000000000000" to the MainChain to trade transactions
+
+- The depositAddress of cli-config file configures "0000000000000000000000000000000000" to the MainChain to trade transactions
+
+```json
+{
+    "Host": "127.0.0.1:13336",
+    "DepositAddress":"0000000000000000000000000000000000"
+}
+```
+
+> ### 2.3 Creating a wallet
+
+1. Generate the keystore.dat file and the wallet.db file
+2. keystore.dat: the file after encrypting the private key
+3. wallet.db: UTXO for storage address
+
+```shell
+$ ./ela-cli wallet -c
+```
+
+```shell
+ADDRESS                            PUBLIC KEY
+---------------------------------- ------------------------------------------------------------------
+ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 02fab9d047f59ecbc49309de83e4b3ef58bc0b53fa8b9eab5ff1ab09fbb28b4b65
+---------------------------------- ------------------------------------------------------------------
+```
+
+> ### 2.4 Show account balance
+
+```shell
+$ ./ela-cli wallet -l
+```
+
+```shell
+INDEX                            ADDRESS BALANCE                           (LOCKED)   TYPE
+----- ---------------------------------- ------------------------------------------ ------
+    1 ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 2.92998500                    (2.92998500) MASTER
+----- ---------------------------------- ------------------------------------------ ------
+```
+
+> ### 2.5 Single sign transfer
+
+#### 2.5.1 Creating a transaction generation
+
+1. from: cost address
+2. to: arrival address
+3. amount: transfer amount
+4. fee: transaction fee
+
+```shell
+$ ./ela-cli wallet -t create --from ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 --to EXYPqZpQQk4muDrdXoRNJhCpoQtFBQetYg --amount 100 --fee 0.00001
+
+Generate: to_be_signed.txn file
+```
+
+> #### 2.5.2 Signature transaction
+
+```shell
+$ ./ela-cli wallet -t sign --file  to_be_signed.txn
+
+Generate: ready_to_send.txn file
+```
+
+> #### 2.5.3 Send transaction
+
+```shell
+$ ./ela-cli wallet -t send --file  ready_to_send.txn
+
+Generate txid: 94d4b62bc91532dc357ee411394540f301efb723d5356e4864abcc7e42a717ec
+```
+
+> ### 2.6 Multi-signal transfer
+
+> #### 2.6.1 Create a multi-signal address
+
+1. A public key corresponding to three or more addresses is required to create a multi-signal address. The default number of signatures is: M=N/2+1, M is the number of signatures, and N is the number of public keys.
+2. The created multi-signal address is the beginning of 8, and the multi-signal address transfer requires M private keys for signature.
+
+```shell
+$ ./ela-cli wallet --addaccount 03AFFC115E36CEFBC32081D57E1373781266989A40B7B70714DC118C7A5E6FD713,02F3A141103E46164263C7F4695F273F00E253388F5C56A3D61CAC995F7D556542,024E232C5201824526246336DF9CA6BC33ADF9726464FF4BF6164EC2F90116EEF6,02EE4469ED7948630F709E90F6B2519CA57FA0C2141EE8C9BA1F811171EEE20F52
+```
+
+```shell
+INDEX                            ADDRESS BALANCE                           (LOCKED)   TYPE
+----- ---------------------------------- ------------------------------------------ ------
+    1 ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 0                             (5.85997000) MASTER
+----- ---------------------------------- ------------------------------------------ ------
+    2 8YaHDqipzMEqGyqCgPSBQxVdWwLyhWJrSp 0                                      (0)  MULTI
+----- ---------------------------------- ------------------------------------------ ------
+```
+
+> #### 2.6.2 Creating a transaction generation
+
+```shell
+$ ./ela-cli wallet -t create --from 8YaHDqipzMEqGyqCgPSBQxVdWwLyhWJrSp --to EXYPqZpQQk4muDrdXoRNJhCpoQtFBQetYg --amount 100 --fee 0.00001
+
+Generate: to_be_signed.txn file
+```
+
+> #### 2.6.3 Signature transaction
+
+```shell
+Signature M times
+
+$ ./ela-cli wallet -t sign --file  to_be_signed.txn
+
+Generate: to_be_signed_1_of_3.txn file
+
+
+$ ./ela-cli wallet -t sign --file  to_be_signed_1_of_3.txn
+
+Generate: to_be_signed_2_of_3.txn file
+
+
+$ ./ela-cli wallet -t sign --file  to_be_signed_2_of_3.txn
+
+Generate: ready_to_send.txn  file
+```
+
+> #### 2.6.4 Send transaction
+
+```shell
+$ ./ela-cli wallet -t send --file  ready_to_send.txn
+
+Generate txid: 94d4b62bc91532dc357ee411394540f301efb723d5356e4864abcc7e42a717ec
+```
+
+> ## 3 SideChain - SideChain transfer
+
+> ### 3.1 Compile the cli client program
+
+1. Download code: <https://github.com/elastos/Elastos.ELA.Client>
+2. Make compile cli node program
+
+> ### 3.2 Prepare cli-config.json
+
+1. Host: Connect `RPC` node to get utxo and send transactions.
+2. DepositAddress: Recharge the side chain according to the address backbone or the SideChain to the MainChain.
+3. Recharge: DepositAddress configures the starting address of the X generated by the SideChain creation block hash, used to recharge the SideChain for the MainChain.
+4. Extract coins: DepositAddress configures "0000000000000000000000000000000000" to the MainChain to trade transactions
+
+- SideChain transfer requires the MainChain to recharge the SideChain, refer to [MainChain - SideChain transfer]
+
+```json
+{
+    "Host": "127.0.0.1:11336",
+    "DepositAddress":"XEmfgnrDLQmFPBJiWvsyYGV2jzLQY58J6G"
+}
+```
+
+> ### 3.3 Creating a wallet
+
+1. Generate the keystore.dat file and the wallet.db file
+2. keystore.dat: the file after encrypting the private key
+3. wallet.db: UTXO for storage address
+
+```shell
+$ ./ela-cli wallet -c
+```
+
+```shell
+ADDRESS                            PUBLIC KEY
+---------------------------------- ------------------------------------------------------------------
+ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 02fab9d047f59ecbc49309de83e4b3ef58bc0b53fa8b9eab5ff1ab09fbb28b4b65
+---------------------------------- ------------------------------------------------------------------
+
+```
+
+> ### 3.4 Show account balance
+
+```shell
+$ ./ela-cli wallet -l
+```
+
+```shell
+INDEX                            ADDRESS BALANCE                           (LOCKED)   TYPE
+----- ---------------------------------- ------------------------------------------ ------
+    1 ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 2.92998500                    (2.92998500) MASTER
+----- ---------------------------------- ------------------------------------------ ------
+```
+
+> ### 3.5 Single sign transfer
+
+> #### 3.5.1 Creating a transaction generation
+
+1. from: cost address
+2. to: arrival address
+3. amount: transfer amount
+4. fee: transaction fee
+
+```shell
+$ ./ela-cli wallet -t create --from ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 --to EXYPqZpQQk4muDrdXoRNJhCpoQtFBQetYg --amount 100 --fee 0.00001
+
+Generate: to_be_signed.txn file
+```
+
+> #### 3.5.2 Signature transaction
+
+```shell
+$ ./ela-cli wallet -t sign --file  to_be_signed.txn
+
+Generate: ready_to_send.txn file
+```
+
+> #### 3.5.3 Send transaction
+
+```shell
+$ ./ela-cli wallet -t send --file  ready_to_send.txn
+
+Generate txid: 94d4b62bc91532dc357ee411394540f301efb723d5356e4864abcc7e42a717ec
+```
+
+> ### 3.6 Multi-signal transfer
+
+> #### 3.6.1 Create a multi-signal address
+
+1. A public key corresponding to three or more addresses is required to create a multi-signal address. The default number of signatures is: M=N/2+1, M is the number of signatures, and N is the number of public keys.
+2. The created multi-signal address is the beginning of 8, and the multi-signal address transfer requires M private keys for signature.
+
+```shell
+$ ./ela-cli wallet --addaccount 03AFFC115E36CEFBC32081D57E1373781266989A40B7B70714DC118C7A5E6FD713,02F3A141103E46164263C7F4695F273F00E253388F5C56A3D61CAC995F7D556542,024E232C5201824526246336DF9CA6BC33ADF9726464FF4BF6164EC2F90116EEF6,02EE4469ED7948630F709E90F6B2519CA57FA0C2141EE8C9BA1F811171EEE20F52
+```
+
+```shell
+----- ---------------------------------- ------------------------------------------ ------
+    1 ENMnJUCiwLnZoV51buMGuiLbwSTBRndh17 0                             (5.85997000) MASTER
+----- ---------------------------------- ------------------------------------------ ------
+    2 8YaHDqipzMEqGyqCgPSBQxVdWwLyhWJrSp 0                                      (0)  MULTI
+----- ---------------------------------- ------------------------------------------ ------
+```
+
+> #### 3.6.2 Creating a transaction generation
+
+```shell
+$ ./ela-cli wallet -t create --from 8YaHDqipzMEqGyqCgPSBQxVdWwLyhWJrSp --to EXYPqZpQQk4muDrdXoRNJhCpoQtFBQetYg --amount 100 --fee 0.00001
+
+Generate: to_be_signed.txn file
+```
+
+> #### 3.6.3 Signature transaction
+
+```shell
+Signature M times
+
+$ ./ela-cli wallet -t sign --file  to_be_signed.txn
+
+Generate: to_be_signed_1_of_3.txn file
+
+
+$ ./ela-cli wallet -t sign --file  to_be_signed_1_of_3.txn
+
+Generate: to_be_signed_2_of_3.txn file
+
+
+$ ./ela-cli wallet -t sign --file  to_be_signed_2_of_3.txn
+
+Generate: ready_to_send.txn  file
+```
+
+> #### 3.6.4 Send transaction
+
+```shell
+$ ./ela-cli wallet -t send --file  ready_to_send.txn
+
+Generate txid: 94d4b62bc91532dc357ee411394540f301efb723d5356e4864abcc7e42a717ec
+```
+
+> ## 4. More instructions
+
+```shell
+$ ./ela-cli wallet
+NAME:
+   ela-cli wallet - wallet operations
+
+USAGE:
+   ela-cli wallet [command options] [args]
+
+DESCRIPTION:
+   With ela-cli wallet, you can create an account, check account balance or build, sign and send transactions.
+
+OPTIONS:
+   --password value, -p value     arguments to pass the password value
+   --name value, -n value         to specify the created keystore file name or the keystore file path to open (default: "keystore.dat")
+   --import value                 create your wallet using an existed private key
+   --export                       export your private key from this wallet
+   --create, -c                   create wallet, this will generate a keystore file within you account information
+   --account, -a                  show account address, public key and program hash
+   --changepassword               change the password to access this wallet, must do not forget it
+   --reset                        clear the UTXOs stored in the local database
+   --addaccount value             add a standard account with a public key, or add a multi-sign account with multiple public keys
+                                  use -m to specify how many signatures are needed to create a valid transaction
+                                  by default M is public keys / 2 + 1, witch means greater than half
+   -m value                       the M value to specify how many signatures are needed to create a valid transaction (default: 0)
+   --delaccount value             delete an account from database using it's address
+   --list, -l                     list accounts information, including address, public key, balance and account type.
+   --transaction value, -t value  use [create, sign, send], to create, sign or send a transaction
+                                  create:
+                                    use --to --amount --fee [--lock], or --file --fee [--lock]
+                                    to create a standard transaction, or multi output transaction
+                                  sign, send:
+                                    use --file or --hex to specify the transaction file path or content
+   --from value                   the spend address of the transaction
+   --to value                     the receive address of the transaction
+   --amount value                 the transfer amount of the transaction
+   --fee value                    the transfer fee of the transaction
+   --lock value                   the lock time to specify when the received asset can be spent
+   --hex value                    the transaction content in hex string format to be sign or send
+   --file value, -f value         the file path to specify a CSV file path with [address,amount] format as multi output content,
+                                  or the transaction file path with the hex string content to be sign or send
+```
+
