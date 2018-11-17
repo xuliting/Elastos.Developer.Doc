@@ -22,6 +22,7 @@ Service deployment for wallet.Service and did.Service：
 18.179.207.38:8080   // this is wallet.Service
 ```
 
+
 ## 2 Start the node and connect to the test environment
 
 In addition, you can use two ways to start a main chain and side chain nodes. The node has been configured to connect to the `testnet` environment synchronization data by default.
