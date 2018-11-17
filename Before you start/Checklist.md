@@ -6,10 +6,11 @@
    - CentOS 7
    - Win 7 or above
 ``` 
+
 ### Tools/Software
-     Docker
-     AWS
-    [Atom Editor](https://atom.io/)
+   - Docker
+   - AWS
+   - [Atom] (https://atom.io)
     
 ### Programing language
     - C++, JS
