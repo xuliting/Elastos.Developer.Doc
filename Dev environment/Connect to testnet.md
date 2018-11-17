@@ -1,4 +1,4 @@
-# Connect to test net environmental
+# Connect to testnet
 
 It is recommended to use `1`, which is easier and more convenient. You can also use the `2` as an alternative.
 
