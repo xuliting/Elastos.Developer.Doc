@@ -642,7 +642,7 @@ Web service default port: 8989, can be modified
 ## Create a transaction on the SideChain
 
 #### 2nd Create a transaction using ela-cli
-# cli Client Transfer - Sidechain Trading
+> # cli Client Transfer - Sidechain Trading
 
 > ## 1 MainChain - SideChain transfer
 
