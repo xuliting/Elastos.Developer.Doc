@@ -98,7 +98,7 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 #### 2.1.3 Server
 
-18.179.20.67:8080  
+<https://hw-did-api-test.elastos.org>
 
 ### 2.2 ela related
 
@@ -112,7 +112,7 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 #### 2.2.3 Server 
 
-18.179.207.38:8080
+<https://hw-ela-api-test.elastos.org>
 
 ### 2.3 Signing transaction related
 
