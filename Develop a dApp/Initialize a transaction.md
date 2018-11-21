@@ -1,8 +1,8 @@
 # Initialize a transaction
 
-## Create a transaction on the MainChain
+## 1st Create a transaction on the MainChain
 
-#### 1st Create a transaction using Utilities.Java
+#### Create a transaction using Utilities.Java
 
 > # Java offline signature tool
 
@@ -639,9 +639,9 @@ Web service default port: 8989, can be modified
   * [ela-cli_Client_usage_MainChain](Doc/ela-cli_Client_usage_MainChain.md)
 
 
-## Create a transaction on the SideChain
+## 2nd Create a transaction on the SideChain
 
-#### 2nd Create a transaction using ela-cli
+#### Create a transaction using ela-cli
 > # cli Client Transfer - Sidechain Trading
 
 > ## 1 MainChain - SideChain transfer
