@@ -642,6 +642,7 @@ Web service default port: 8989, can be modified
 ## 2nd Create a transaction on the SideChain
 
 #### Create a transaction using ela-cli
+
 > # cli Client Transfer - Sidechain Trading
 
 > ## 1 MainChain - SideChain transfer
@@ -1107,4 +1108,3 @@ OPTIONS:
    --file value, -f value         the file path to specify a CSV file path with [address,amount] format as multi output content,
                                   or the transaction file path with the hex string content to be sign or send
 ```
-

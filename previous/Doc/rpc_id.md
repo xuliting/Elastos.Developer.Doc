@@ -1,4 +1,4 @@
-#### getidentificationtxbyidandpath
+## getidentificationtxbyidandpath
 
 description: get registered id transaction by id and path
 parameters:

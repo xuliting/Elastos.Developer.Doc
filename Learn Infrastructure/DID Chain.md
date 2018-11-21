@@ -9,3 +9,7 @@ Inspired by Bitcoin's decentralized wallet, we can use the wallet address as the
 Based on the above, Elastos implemented Elastos DID Side-Chain, which provides a decentralized digital identity solution for the Internet world, allowing everyone to have their own DID for free. By having a DID, everyone can self-sovereign in the Internet world; everyone can assert their own digital assets; everyone can communicate securely based on trusted identity.
 
 Elastos DID is generated, verified and certified based on Elastos DID Side-Chain.
+
+## [data structure](../previous/Doc/go_data_structure.md)
+
+## [rpc id](../previous/Doc/rpc_id.md)
