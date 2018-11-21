@@ -28,9 +28,9 @@ Elastos has prepared the relevant environment to use, please view the following 
 
 * Build a node of IDChain and connection test environment
 
-  * [SideChain_deploy](Doc/ELA_SideChain_deploy.md)
+  * [SideChain_deploy](../previous/Doc/ELA_SideChain_deploy.md)
 
-  * [Connect to the SideChain of testnet](Doc/Connect_to_SideChain_of_testnet.md)
+  * [Connect to the SideChain of testnet](../previous/Doc/Connect_to_SideChain_of_testnet.md)
 
 ### 3.3 Building a test chain
 
@@ -44,28 +44,28 @@ Building test chains can be divided into three types:
 
 Specific steps can refer to the following document content:
 
-* [Build_test_Chain_EN](Doc/Build_test_Chain.md)
+* [Build_test_Chain_EN](../previous/Doc/Build_test_Chain.md)
 
 ## 4. Create a transaction
 
 ### 4.1. Create a transaction on the MainChain
 
 * Create a transaction using Utilities.Java
-  * [Java_offline_signature](Doc/Java_offline_signature.md)
+  * [Java_offline_signature](../previous/Doc/Java_offline_signature.md)
 
 * Create a transaction using ela-cli
 
-  * [ela-cli_Client_usage_MainChain](Doc/ela-cli_Client_usage_MainChain.md)
+  * [ela-cli_Client_usage_MainChain](../previous/Doc/ela-cli_Client_usage_MainChain.md)
 
 ### 4.2. Create a transaction on the SideChain
 
 * Create a transaction using ela-cli
-  * [ela-cli_Client_usage_SideChain](Doc/ela-cli_Client_usage_SideChain.md)
+  * [ela-cli_Client_usage_SideChain](../previous/Doc/ela-cli_Client_usage_SideChain.md)
 
 ## 5. Integrate exchange
 
-* [Java offline signature](Doc/Java_offline_signature.md)
+* [Java offline signature](../previous/Doc/Java_offline_signature.md)
 
 * Java Wallet document
 
-  * [PDF](Doc/Java_wallet_doc.pdf)
+  * [PDF](../previous/Doc/Java_wallet_doc.pdf)

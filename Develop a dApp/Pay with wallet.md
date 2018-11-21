@@ -8,7 +8,7 @@
 
 Plugin Directory：
 
-https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/appmanager
+<https://github.com/elastos/Elastos.ORG.Wallet.Mobile/tree/ds/appmanager>
 
 Installation instructions:
 

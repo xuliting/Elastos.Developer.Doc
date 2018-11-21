@@ -1,6 +1,6 @@
 # How to contribute to this Docs and earn ELA
 
-## Any developer is free to improve this documentation, including but not limited to the following ways to contribute:
+## Any developer is free to improve this documentation, including but not limited to the following ways to contribute
 
 1. Submit a issue about this doc that we can improve.
 2. Improve the documentation. The default version is English version, you can submit multi-language version. If you submit a different language version, the file suffix will be expressed in a similar format as "_CN".
