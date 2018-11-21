@@ -839,7 +839,7 @@ INDEX                            ADDRESS BALANCE                           (LOCK
 
 > ### 2.5 Single sign transfer
 
-#### 2.5.1 Creating a transaction generation
+> #### 2.5.1 Creating a transaction generation
 
 1. from: cost address
 2. to: arrival address
