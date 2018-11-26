@@ -330,7 +330,7 @@ Refer to the last part of the documentation below to export the latest API docum
 ### 5.2. Sample
 
 * demo
-  <https://github.com/elastos/Elastos.Developer.Doc/tree/master/Ignore/Demo/android>
+  <https://github.com/elastos/Elastos.Developer.Doc/tree/master/Ignore/Demo/android/CarrierDemo.zip>
 
 * doc
   * [EN](Ignore/Doc/Carrier_For_Android.md)
