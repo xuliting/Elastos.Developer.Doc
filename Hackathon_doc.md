@@ -23,7 +23,7 @@ The hackathon marathon is recommended to use 1.3.1.
 #### 1.3.1 Direct, AWS, docker
 
 Elastos has prepared the relevant environment for the hacker to use, please hacker to view the following documents：
-<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-aws-ami.md>
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/ela-aws-ami.md>
 
 #### 1.3.2 Build a node, link the test environment
 
@@ -35,9 +35,9 @@ Elastos has prepared the relevant environment for the hacker to use, please hack
 
 * ID Chain
   * Build the ID Chain:
-    <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ELA_SideChain_deploy.md>
+    <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/ELA_SideChain_deploy.md>
   * Connect to the DID of testnet:
-    <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Connect_to_SideChain_of_testnet.md>
+    <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/Connect_to_SideChain_of_testnet.md>
 
 #### 1.3.3 Developers build their own test chains
 
@@ -47,7 +47,7 @@ Building test chains can be divided into three types:
 * Build a IDChain
 * Build a SideChain
 
-<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Build_test_Chain.md>
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/Build_test_Chain.md>
 
 ### 1.4 Create a transaction
 
@@ -57,15 +57,15 @@ Trading on the Main Chain can be divided into two ways:
 
 * Create a transaction using Utilities.Java
 
-  <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Java_offline_signature.md>
+  <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/Java_offline_signature.md>
 
 * Create a transaction using ela-cli
 
-  <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-cli_Client_usage_MainChain.md>
+  <https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/ela-cli_Client_usage_MainChain.md>
 
 #### 1.4.2 Create a transaction on the Side Chain
 
-<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-cli_Client_usage_SideChain.md>
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/ela-cli_Client_usage_SideChain.md>
 
 ### 1.5 How to get the test coin
 
@@ -110,7 +110,7 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 <https://walletservice.readthedocs.io/en/latest/>
 
-#### 2.2.3 Server 
+#### 2.2.3 Server
 
 <https://hw-ela-api-test.elastos.org>
 
@@ -144,15 +144,15 @@ Refer to the last part of the documentation below to export the latest API docum
 
 #### 3.2.1 Demo
 
-<https://github.com/elastos/Elastos.Developer.Doc/tree/master/Demo/android>
+<https://github.com/elastos/Elastos.Developer.Doc/tree/master/Ignore/Demo/android>
 
 #### 3.2.2 Doc
 
-<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/Carrier_For_Android.md>
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/Carrier_For_Android.md>
 
 ### 3.3 FAQ
 
-<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/How_to_use_Carrier_API_FAQ.md>
+<https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/How_to_use_Carrier_API_FAQ.md>
 
 ## 4 Relevant information
 
