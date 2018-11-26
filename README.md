@@ -14,8 +14,8 @@ In order to avoid omissions, contributors are requested to send an email to Dev-
 
 > ## The award assessment rules for the contribution of community members
 
-* [EN](Doc/Contribution_Award_Assessment.md)
-* [CN](Doc/Contribution_Award_Assessment_CN.md)
+* [EN](Ignore/Doc/Contribution_Award_Assessment.md)
+* [CN](Ignore/Doc/Contribution_Award_Assessment_CN.md)
 
 ## 1. CAR programming
 
@@ -168,8 +168,8 @@ Document not yet available.
 
 Elastos has prepared the relevant environment to use, please view the following documents：
 
-* [EN](https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-aws-ami.md)
-* [CN](https://github.com/elastos/Elastos.Developer.Doc/blob/master/Doc/ela-aws-ami_CN.md)
+* [EN](https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/ela-aws-ami.md)
+* [CN](https://github.com/elastos/Elastos.Developer.Doc/blob/master/Ignore/Doc/ela-aws-ami_CN.md)
 
 #### 3.3.2 Build a node and connect to the test environment
 
@@ -182,12 +182,12 @@ Elastos has prepared the relevant environment to use, please view the following 
 * Build a node of IDChain and connection test environment
 
   * SideChain_deploy
-    * [EN](Doc/ELA_SideChain_deploy.md)
-    * [CN](Doc/ELA_SideChain_deploy_CN.md)
+    * [EN](Ignore/Doc/ELA_SideChain_deploy.md)
+    * [CN](Ignore/Doc/ELA_SideChain_deploy_CN.md)
 
   * Connect to the SideChain of testnet
-    * [EN](Doc/Connect_to_SideChain_of_testnet.md)
-    * [CN](Doc/Connect_to_SideChain_of_testnet_CN.md)
+    * [EN](Ignore/Doc/Connect_to_SideChain_of_testnet.md)
+    * [CN](Ignore/Doc/Connect_to_SideChain_of_testnet_CN.md)
 
 #### 3.3.3 Building a test chain
 
@@ -201,27 +201,27 @@ Building test chains can be divided into three types:
 
 Specific steps can refer to the following document content:
 
-* [Build_test_Chain_EN](Doc/Build_test_Chain.md)
-* [Build_test_Chain_CN](Doc/Build_test_Chain_CN.md)
+* [Build_test_Chain_EN](Ignore/Doc/Build_test_Chain.md)
+* [Build_test_Chain_CN](Ignore/Doc/Build_test_Chain_CN.md)
 
 ### 3.4. Create a transaction
 
 #### 3.4.1. Create a transaction on the MainChain
 
 * Create a transaction using Utilities.Java
-  * [Java_offline_signature](Doc/Java_offline_signature.md)
-  * [Java_offline_signature_CN](Doc/Java_offline_signature_CN.md)
+  * [Java_offline_signature](Ignore/Doc/Java_offline_signature.md)
+  * [Java_offline_signature_CN](Ignore/Doc/Java_offline_signature_CN.md)
 
 * Create a transaction using ela-cli
 
-  * [ela-cli_Client_usage_MainChain](Doc/ela-cli_Client_usage_MainChain.md)
-  * [ela-cli_Client_usage_MainChain_CN](Doc/ela-cli_Client_usage_MainChain_CN.md)
+  * [ela-cli_Client_usage_MainChain](Ignore/Doc/ela-cli_Client_usage_MainChain.md)
+  * [ela-cli_Client_usage_MainChain_CN](Ignore/Doc/ela-cli_Client_usage_MainChain_CN.md)
 
 #### 3.4.2. Create a transaction on the SideChain
 
 * Create a transaction using ela-cli
-  * [ela-cli_Client_usage_SideChain](Doc/ela-cli_Client_usage_SideChain.md)
-  * [ela-cli_Client_usage_SideChain_CN](Doc/ela-cli_Client_usage_SideChain_CN.md)
+  * [ela-cli_Client_usage_SideChain](Ignore/Doc/ela-cli_Client_usage_SideChain.md)
+  * [ela-cli_Client_usage_SideChain_CN](Ignore/Doc/ela-cli_Client_usage_SideChain_CN.md)
 
 #### 3.4.3 How to get the test coin
 
@@ -244,14 +244,14 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 * Java offline signature
 
-  * [EN](Doc/Java_offline_signature.md)
-  * [CN](Doc/Java_offline_signature_CN.md)
+  * [EN](Ignore/Doc/Java_offline_signature.md)
+  * [CN](Ignore/Doc/Java_offline_signature_CN.md)
 
-  * [PDF_CN](Doc/Java_offline_signature_CN.pdf)
+  * [PDF_CN](Ignore/Doc/Java_offline_signature_CN.pdf)
 
 * Java Wallet document
 
-  * [PDF](Doc/Java_wallet_doc.pdf)
+  * [PDF](Ignore/Doc/Java_wallet_doc.pdf)
 
 ## 4. H5 DApp Programming
 
@@ -259,43 +259,43 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 * DApp_manual
 
-  * [EN](Doc/DApp_manual.md)
+  * [EN](Ignore/Doc/DApp_manual.md)
 
-  * [CN](Doc/DApp_manual_CN.md)
+  * [CN](Ignore/Doc/DApp_manual_CN.md)
 
 ### 4.2. Call DID login
 
 * DApp_DID
 
-  * [EN](Doc/DApp_DID.md)
+  * [EN](Ignore/Doc/DApp_DID.md)
 
-  * [CN](Doc/DApp_DID_CN.md)
+  * [CN](Ignore/Doc/DApp_DID_CN.md)
 
 * DID Spec
 
   This is a draft，which is a document that introduces the id side-chain interface.
 
-  * [CN](Doc/Elastos_DID_Spec(draft)_CN.docx)
+  * [CN](Ignore/Doc/Elastos_DID_Spec(draft)_CN.docx)
 
 * DID programming guide
 
   This is a draft，which is a description of how to use did, recommendations and specifications.
 
-  * [CN](Doc/Elastos_DID_Programming_Guide(draft)_CN.docx)
+  * [CN](Ignore/Doc/Elastos_DID_Programming_Guide(draft)_CN.docx)
 
 * DID service
 
   This is a draft，which is the interface that introduces the did service we are doing. It is based on the "DID programming guide".
 
-  * [CN](Doc/Elastos_DID_Service(draft)_CN.docx)
+  * [CN](Ignore/Doc/Elastos_DID_Service(draft)_CN.docx)
 
 ### 4.3. Call Wallet to pay
 
 * DApp_Wallet
 
-  * [EN](Doc/DApp_Wallet.md)
+  * [EN](Ignore/Doc/DApp_Wallet.md)
 
-  * [CN](Doc/DApp_Wallet_CN.md)
+  * [CN](Ignore/Doc/DApp_Wallet_CN.md)
 
 ## 5. Elastos Carrier
 
@@ -329,13 +329,14 @@ Refer to the last part of the documentation below to export the latest API docum
 
 ### 5.2. Sample
 
-demo： <https://github.com/elastos/Elastos.Developer.Doc/tree/master/Demo/android>
+* demo
+  <https://github.com/elastos/Elastos.Developer.Doc/tree/master/Ignore/Demo/android>
 
 * doc
-  * [EN](Doc/Carrier_For_Android.md)
-  * [CN](Doc/Carrier_For_Android_CN.md)
+  * [EN](Ignore/Doc/Carrier_For_Android.md)
+  * [CN](Ignore/Doc/Carrier_For_Android_CN.md)
 
 ### 5.3. FAQ
 
-* [EN](Doc/How_to_use_Carrier_API_FAQ.md)
+* [EN](Ignore/Doc/How_to_use_Carrier_API_FAQ.md)
 * [CN](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK/wiki/How-to-use-Carrier-API)
