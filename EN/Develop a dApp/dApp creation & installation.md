@@ -19,7 +19,7 @@
 
 ### 1.1. Features of Trinity
 
-![DApp_manual_1](../images/DApp_manual_1.png)
+![DApp_manual_1](../../Ignore/images/DApp_manual_1.png)
 
 ### 1.2. Advantages of Trinity
 
@@ -31,7 +31,7 @@
 
 ### 1.3. Trinity Architecture
 
-![DApp_manual_2](../images/DApp_manual_2.png)
+![DApp_manual_2](../../Ignore/images/DApp_manual_2.png)
 
 ## 2. Definition of DApp
 
@@ -45,15 +45,15 @@ There are various ways to distribute the DApp such as Yahoo Yellow page, differe
 
 ## 3. Setup Elastos DApp Development Environment
 
-![DApp_manual_3](../images/DApp_manual_3.png)
+![DApp_manual_3](../../Ignore/images/DApp_manual_3.png)
 
 ## 4. How to create Dapp
 
-![DApp_manual_4](../images/DApp_manual_4.png)
+![DApp_manual_4](../../Ignore/images/DApp_manual_4.png)
 
 ## 5. Run the DApp
 
-![DApp_manual_5](../images/DApp_manual_5.png)
+![DApp_manual_5](../../Ignore/images/DApp_manual_5.png)
 
 ### 5.1. Run inside Trinity
 
@@ -68,8 +68,8 @@ There are various ways to distribute the DApp such as Yahoo Yellow page, differe
 3. Copy or download the epk to the device
 4. Import the epk document through Trinity, then run on the desktop
 
-![DApp_manual_6](../images/DApp_manual_6.png)
-![DApp_manual_7](../images/DApp_manual_7.png)
+![DApp_manual_6](../../Ignore/images/DApp_manual_6.png)
+![DApp_manual_7](../../Ignore/images/DApp_manual_7.png)
 
 ## 6. Develop Ionic App
 
@@ -79,8 +79,8 @@ There are various ways to distribute the DApp such as Yahoo Yellow page, differe
 
 ### 6.2. Native APIs
 
-![DApp_manual_8](../images/DApp_manual_8.png)
+![DApp_manual_8](../../Ignore/images/DApp_manual_8.png)
 
 ## 7. Plugin for Trinity
 
-![DApp_manual_9](../images/DApp_manual_9.png)
+![DApp_manual_9](../../Ignore/images/DApp_manual_9.png)

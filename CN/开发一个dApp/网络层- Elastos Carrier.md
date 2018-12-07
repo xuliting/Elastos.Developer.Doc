@@ -12,7 +12,7 @@ Elastos Carrier提供跨网络访问功能。 例如，任何两个app节点都�
 
 打开文档，进入到html目录，找到index.html并单击，可以在浏览器中打开API文档。
 
-* [Carrier_API](SDK/Elastos.NET.Carrier.Native.SDK_API.zip)
+* [Carrier_API](../../Ignore/SDK/Elastos.NET.Carrier.Native.SDK_API.zip)
 
 请参阅以下文档的最后一部分来导出最新的API文档：
 

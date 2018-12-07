@@ -17,7 +17,7 @@
 
 ### 1.1.Trinity 特点
 
-![DApp_manual_1](../images/DApp_manual_1.png)
+![DApp_manual_1](../../Ignore/images/DApp_manual_1.png)
 
 ### 1.2.Trinity 的优势
 
@@ -33,7 +33,7 @@
 
 ### 1.3.Trinity Architecture
 
-![DApp_manual_2](../images/DApp_manual_2.png)
+![DApp_manual_2](../../Ignore/images/DApp_manual_2.png)
 
 ## 2.DApp 定义
 
@@ -43,15 +43,15 @@ DApp的所有权登记在区块链上，就像比特币一样放在个人的钱�
 
 ## 3.环境搭建
 
-![DApp_manual_3](../images/DApp_manual_3.png)
+![DApp_manual_3](../../Ignore/images/DApp_manual_3.png)
 
 ## 4.创建应用
 
-![DApp_manual_4](../images/DApp_manual_4.png)
+![DApp_manual_4](../../Ignore/images/DApp_manual_4.png)
 
 ## 5.运行应用
 
-![DApp_manual_5](../images/DApp_manual_5.png)
+![DApp_manual_5](../../Ignore/images/DApp_manual_5.png)
 
 ### 5.1.运行在 Trinity 内
 
@@ -67,7 +67,7 @@ DApp的所有权登记在区块链上，就像比特币一样放在个人的钱�
 * 3 将生成的epk文件拷贝或者下载到设备上
 * 4 通过Trinity 导入epk文件，回到桌面运行
 
-![DApp_manual_6](../images/DApp_manual_6.png) ![DApp_manual_7](../images/DApp_manual_7.png)
+![DApp_manual_6](../../Ignore/images/DApp_manual_6.png) ![DApp_manual_7](../../Ignore/images/DApp_manual_7.png)
 
 ## 6.调试应用
 
@@ -77,8 +77,8 @@ DApp的所有权登记在区块链上，就像比特币一样放在个人的钱�
 
 ### 6.2.Native APIs
 
-![DApp_manual_8](../images/DApp_manual_8.png)
+![DApp_manual_8](../../Ignore/images/DApp_manual_8.png)
 
 ## 7.内置插件
 
-![DApp_manual_9](../images/DApp_manual_9.png)
+![DApp_manual_9](../../Ignore/images/DApp_manual_9.png)
