@@ -27,7 +27,7 @@ function (data) {},
 function (error) {});
 ```
 
-![DApp_DID_1](../images/DApp_DID_1.png)
+![DApp_DID_1](../../Ignore/images/DApp_DID_1.png)
 
 ## 3. Explanation of Configuring the parameters
 
@@ -48,12 +48,12 @@ function (error) {});
 
 ## 4. Explanation of Returned Parameters
 
-![DApp_Wallet_1](../images/DApp_Wallet_1.png)
+![DApp_Wallet_1](../../Ignore/images/DApp_Wallet_1.png)
 
 * txId:  transaction ID,  32 bytes string
 
 ## 5. The Effects of Ruuning in Trinity
 
-![DApp_1](../images/DApp_1.png)
-![DApp_2](../images/DApp_2.png)
-![DApp_Wallet_2](../images/DApp_Wallet_2.png)
+![DApp_1](../../Ignore/images/DApp_1.png)
+![DApp_2](../../Ignore/images/DApp_2.png)
+![DApp_Wallet_2](../../Ignore/images/DApp_Wallet_2.png)

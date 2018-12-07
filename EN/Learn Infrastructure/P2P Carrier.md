@@ -12,7 +12,7 @@ The API is provided by default.
 
 Open the document, go to the html directory, find index.html and click it to open the API document in the browser.
 
-* [Carrier_API](SDK/Elastos.NET.Carrier.Native.SDK_API.zip)
+* [Carrier_API](../../Ignore/SDK/Elastos.NET.Carrier.Native.SDK_API.zip)
 
 Refer to the last part of the documentation below to export the latest API documentation:
 
