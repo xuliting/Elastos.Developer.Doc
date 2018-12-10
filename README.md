@@ -275,19 +275,19 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
   This is a draft，which is a document that introduces the id side-chain interface.
 
-  * [CN](Ignore/Doc/Elastos_DID_Spec(draft)_CN.docx)
+  * [CN](Ignore/Doc/Elastos_DID_Spec(draft)_CN.md)
 
 * DID programming guide
 
   This is a draft，which is a description of how to use did, recommendations and specifications.
 
-  * [CN](Ignore/Doc/Elastos_DID_Programming_Guide(draft)_CN.docx)
+  * [CN](Ignore/Doc/Elastos_DID_Programming_Guide(draft)_CN.md)
 
 * DID service
 
   This is a draft，which is the interface that introduces the did service we are doing. It is based on the "DID programming guide".
 
-  * [CN](Ignore/Doc/Elastos_DID_Service(draft)_CN.docx)
+  * [CN](Ignore/Doc/Elastos_DID_Service(draft)_CN.md)
 
 ### 4.3. Call Wallet to pay
 
