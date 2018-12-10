@@ -8,7 +8,7 @@
 
 [Elastos_DID_Programming_Guide](../../Ignore/Doc/Elastos_DID_Programming_Guide(draft)_CN.md)
 
-## DID
+## DID 描述
 
 这是一个草案，它是一个介绍DID侧链接口的文档。
 
