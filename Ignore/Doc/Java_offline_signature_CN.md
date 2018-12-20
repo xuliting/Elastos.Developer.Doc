@@ -53,7 +53,7 @@ web服务默认端口：8989，可修改
 
 * 参数说明
 
-  * java程序金额为最小单位1塞拉(1 ela = 100000000 sela(1亿塞拉) )，只能是正整数
+  * java程序金额为最小单位0.00000001ela(即:amount="00.00000001"ELA)，String类型
   * java-config.json 文件需要放在java程序同级目录，目的是连接节点获取utxo
   * Host：节点程序所在的服务器ip和rpc端口
   * Fee：双方规定的交易费，一笔交易的单个输出或多个输出交易费是一样的
@@ -69,7 +69,7 @@ web服务默认端口：8989，可修改
     ```json
     {
     "Host": "127.0.0.1:11336",
-    "Fee":5000,
+    "Fee":"0.0005",
     "Confirmation":16
     }
     ```
@@ -94,11 +94,11 @@ web服务默认端口：8989，可修改
                         "Outputs":[
                             {
                                 "address":"Eazj14ifau5eH1SP5F8MJRuiSsPMiGbJV1",
-                                "amount":28900000
+                                "amount":"0.1"
                             },
                             {
                                 "address":"EQSpUzE4XYJhBSx5j7Tf2cteaKdFdixfVB",
-                                "amount":60000000
+                                "amount":"10.2"
                             }
                         ],
                         "ChangeAddress":"Edi5WWMFBsEL2qgggrFhnJe1HTjDnw447H"
@@ -127,7 +127,7 @@ web服务默认端口：8989，可修改
   * 离线签名，保障账户安全
 
 * 参数说明
-  * java程序金额为最小单位1塞拉(1 ela = 100000000 sela(1亿塞拉) )，只能是正整数
+  * java程序金额为最小单位0.00000001ela(即:amount="00.00000001"ELA)，String类型
   * 需要计算找零地址余额，找零余额=inputs-outputs-fee，将找零地址和余额写在outputs最后一行
   * txid：地址的可用余额所在的交易,下面接口返回的信息txid写入这里
   * index：可用余额所在交易中的序号, 下面接口返回的信息vout为index
@@ -156,7 +156,7 @@ web服务默认端口：8989，可修改
         "result": [
             {
                 "assetid": "a3d0eaa466df74983b5d7c543de6904f4c9418ead5ffd6d25814234a96db37b0",
-                "txid": "9132cf82a18d859d200c952aec548d7895e7b654fd1761d5d059b91edbad1768",
+                "txid": "61c22a83bb96d958f473148fa64f3b2be02653c66ede506e83b82e522200d446",
                 "vout": 0,
                 "address": "8ZNizBf4KhhPjeJRGpox6rPcHE5Np6tFx3",
                 "amount": "33000000",
@@ -164,7 +164,7 @@ web服务默认端口：8989，可修改
             },
             {
                 "assetid": "a3d0eaa466df74983b5d7c543de6904f4c9418ead5ffd6d25814234a96db37b0",
-                "txid": "3edbcc839fd4f16c0b70869f2d477b56a006d31dc7a10d8cb49bd12628d6352e",
+                "txid": "a91b63ba6ffdb13379451895c51abd25c54678bc89268db6e6c3dcbb7bb07062",
                 "vout": 0,
                 "address": "8ZNizBf4KhhPjeJRGpox6rPcHE5Np6tFx3",
                 "amount": "0.01255707",
@@ -200,11 +200,11 @@ web服务默认端口：8989，可修改
                         "Outputs":[
                             {
                                 "address":"ERz34iKa4nGaGYVtVpRWQZnbavJEe6PRDt",
-                                "amount":200
+                                "amount":"0.1"
                             },
                             {
                                 "address":"EKjeZEmLSXyyJ42xxjJP4QsKJYWwEXabuC",
-                                "amount":240
+                                "amount":"10.2"
                             }
                         ]
                     }
@@ -238,7 +238,7 @@ web服务默认端口：8989，可修改
 
 * 参数说明
 
-  * java程序金额为最小单位1塞拉(1 ela = 100000000 sela(1亿塞拉) )，只能是正整数
+  * java程序金额为最小单位0.00000001ela(即:amount="00.00000001"ELA)，String类型
   * java-config.json 文件需要放在java程序同级目录，目的是连接节点获取utxo
   * Host：节点程序所在的服务器ip和rpc端口
   * Fee：双方规定的交易费，一笔交易的单个输出或多个输出交易费是一样的
@@ -258,7 +258,7 @@ web服务默认端口：8989，可修改
     ```
     {
     "Host": "127.0.0.1:11336",
-    "Fee":5000,
+    "Fee":"0.0005",
     "Confirmation":16
     }
     ```
@@ -280,13 +280,13 @@ web服务默认端口：8989，可修改
                         "Outputs":[
                             {
                                 "address":"XLC69K4932zZf1SRwJCDbv5HGk7DbDYZ9H",
-                                "amount":100000
+                                "amount":"10.2"
                             }
                         ],
                         "CrossChainAsset":[
                             {
                                 "address":"ESH5SrT7GZ4uxTH6aQF3ne7X8AUzWdREzz",
-                                "amount":20000
+                                "amount":"10.2"
                             }
                         ],
 
@@ -316,7 +316,7 @@ web服务默认端口：8989，可修改
   * 离线签名，保障账户安全
 
 * 参数说明：
-  * java程序金额为最小单位1塞拉(1 ela = 100000000 sela(1亿塞拉) )，只能是正整数
+  * java程序金额为最小单位0.00000001ela(即:amount="00.00000001"ELA)，String类型
   * 需要计算找零地址余额，找零余额=inputs-outputs-fee，将找零地址和余额写在outputs最后一行
   * txid：地址的可用余额所在的交易,下面接口返回的信息txid写入这里
   * index：可用余额所在交易中的序号, 下面接口返回的信息vout为index
@@ -348,11 +348,11 @@ web服务默认端口：8989，可修改
                         "Outputs":[
                             {
                                 "address":"XKUh4GLhFJiqAMTF6HyWQrV9pK9HcGUdfJ",
-                                "amount":70000
+                                "amount":"10.2"
                             },
                             {
                                 "address":"EQSpUzE4XYJhBSx5j7Tf2cteaKdFdixfVB",
-                                "amount":999800000
+                                "amount":"0.1"
                             }
                         ],
                         "PrivateKeySign":[
@@ -363,7 +363,7 @@ web服务默认端口：8989，可修改
                         "CrossChainAsset":[
                             {
                                 "address":"EQSpUzE4XYJhBSx5j7Tf2cteaKdFdixfVB",
-                                "amount":60000
+                                "amount":"10.1"
                             }
                         ]
                     }
