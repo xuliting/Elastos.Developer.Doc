@@ -208,7 +208,7 @@ Information collected by the Crash log:
 * Memory size / available storage space
 * sd size
 
-For more information on Tencent's Bugly privacy practices, please visit the Tencent Bugly User Agreement page: <Https://bugly.qq.com/v2/contract>
+For more information on Tencent's Bugly privacy practices, please visit the Tencent Bugly User Agreement page: <https://bugly.qq.com/v2/contract>
 
 ### Links To Other Sites
 
