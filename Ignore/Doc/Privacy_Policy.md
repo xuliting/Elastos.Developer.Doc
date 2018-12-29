@@ -192,6 +192,22 @@ Tencent Bugly
 
 Tencent Bugly is one of Tencent's services for mobile developers. Provide professional developers with abnormal reporting and operational statistics to help developers quickly identify and resolve anomalies, while keeping abreast of product operations and keeping up with user feedback.
 
+Elephant integrates the bugly feature, the main function is to capture the crash information and application upgrade of the Elephant application.
+
+User information is not collected when upgrading information.
+
+Information collected by the Crash log:
+
+* Application version
+* Equipment model
+* ROM information
+* CPU architecture
+* android system version
+* Network APN
+* Is ROOT?
+* Memory size / available storage space
+* sd size
+
 For more information on Tencent's Bugly privacy practices, please visit the Tencent Bugly User Agreement page: <Https://bugly.qq.com/v2/contract>
 
 ### Links To Other Sites
