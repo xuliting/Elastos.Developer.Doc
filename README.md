@@ -146,7 +146,7 @@ The main interface in DID are as follows. For the specific interface methods, re
 
 #### 2.4.3 Signature transaction related
 
-* [Code](https://github.com/elastos/Elastos.ORG.Wallet.Lib.C.git)
+* [Code](https://github.com/elastos/Elastos.SDK.Keypair.C.git)
 
 * [API & doc](https://elastoswalletlibc.readthedocs.io/en/latest/)
 
