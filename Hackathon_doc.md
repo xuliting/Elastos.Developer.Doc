@@ -118,7 +118,7 @@ Note: The ELA address should be the address of the registered wallet at <https:/
 
 #### 2.3.1 Code
 
-<https://github.com/elastos/Elastos.ORG.Wallet.Lib.C.git>
+<https://github.com/elastos/Elastos.SDK.Keypair.C.git>
 
 #### 2.3.2 API & doc
 
