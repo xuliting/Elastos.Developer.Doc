@@ -1,0 +1,59 @@
+# 生成AppID
+
+### 步骤1, 生成开发者账号Did
+
+生成开发者账号，公私钥，Did.
+
+### 步骤2, 注册开发者账号Did
+
+将开发者账号的公钥作为属性写到id链, key为"PublicKey".
+
+### 步骤3, 生成AppID
+
+定义一个应用名称, 示例: org.elastos.app.wallet.
+
+用开发者账号的私钥对应用名称签名. AppID = sign(privateKey, {AppName}).
+
+将签名数据作为开发者账号DID的属性写到id链, key为"Dev/{AppName}/AppID".
+
+### AppID tool
+
+可以通过Elastos的命令行工具来一键生成开发者账号，AppID.
+
+工具源码链接: <https://github.com/elastos/Elastos.SDK.DIDClient.Java/tree/master/sample/src/main/java/sample/com/tool>
+
+命令行运行: java -jar tool.did-1.0.jar --name appname [--mne][mnemonic（12 mnemonics, separated by spaces）]
+
+1.初次创建AppID，还没有生成助记词
+
+命令行运行:  java -jar tool.did-1.0.jar --name appname
+
+示例:
+```
+> java -jar tool.did-1.0.jar --name org.elastos.app.wallet
+
+>appName: org.elastos.app.wallet
+appId: 1A3D9833BA939F1DE9BF81DC9C8C34D431CB0E97C48F0C817A9270A98317484662612598DF1A5970550DAAA097CB6369AB670B28283813FED73DF3209428A538
+appIdSign: 4602E3B7258A4A8FED9104FC0E0894CA0AE6070D85DB973F3F0D4AAA2A2ED6C44ACB8B5368687D10EAB29BF336EDC638D3F20B24CC1F60C0C384D9B68CC36ABB
+didMnemonic: when also cushion wide service young turtle scale unhappy daring vendor snake
+didPrivateKey: D5356959F4751DCA02087D3537F2E20B29525BEA9F80647DD832B7A9367077ED
+didPublicKey: 02D9A54E0B6FC3077DD39D3DE54A21B3A7D3AD5A88B1AA47AF18B518261E5ED5BA
+did: iXrSsJheLrrXDLxxyKz8wbV8nsHnuExRDu
+upload data: {"did":"iXrSsJheLrrXDLxxyKz8wbV8nsHnuExRDu","properties":[{"key":"PublicKey","status":"Normal","value":"02D9A54E0B6FC3077DD39D3DE54A21B3A7D3AD5A88B1AA47AF18B518261E5ED5BA"},{"key":"Dev/org.elastos.app.wallet/AppID","status":"Normal","value":"1A3D9833BA939F1DE9BF81DC9C8C34D431CB0E97C48F0C817A9270A98317484662612598DF1A5970550DAAA097CB6369AB670B28283813FED73DF3209428A538"}],"status":"Normal","tag":"DID Property","ver":"1.0"}
+```
+
+2.已生成助记词，创建AppID
+
+示例：
+```
+>java -jar tool.did-1.0.jar --name org.elastos.app.wallet --mne when also cushion wide service young turtle scale unhappy daring vendor snake
+
+>appName: org.elastos.app.wallet
+appId: 1A3D9833BA939F1DE9BF81DC9C8C34D431CB0E97C48F0C817A9270A98317484662612598DF1A5970550DAAA097CB6369AB670B28283813FED73DF3209428A538
+appIdSign: 4602E3B7258A4A8FED9104FC0E0894CA0AE6070D85DB973F3F0D4AAA2A2ED6C44ACB8B5368687D10EAB29BF336EDC638D3F20B24CC1F60C0C384D9B68CC36ABB
+didMnemonic: when also cushion wide service young turtle scale unhappy daring vendor snake
+didPrivateKey: D5356959F4751DCA02087D3537F2E20B29525BEA9F80647DD832B7A9367077ED
+didPublicKey: 02D9A54E0B6FC3077DD39D3DE54A21B3A7D3AD5A88B1AA47AF18B518261E5ED5BA
+did: iXrSsJheLrrXDLxxyKz8wbV8nsHnuExRDu
+upload data: {"did":"iXrSsJheLrrXDLxxyKz8wbV8nsHnuExRDu","properties":[{"key":"Dev/org.elastos.app.wallet/AppID","status":"Normal","value":"1A3D9833BA939F1DE9BF81DC9C8C34D431CB0E97C48F0C817A9270A98317484662612598DF1A5970550DAAA097CB6369AB670B28283813FED73DF3209428A538"}],"status":"Normal","tag":"DID Property","ver":"1.0"}
+```
